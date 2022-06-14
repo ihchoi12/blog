@@ -9,7 +9,7 @@ To understand pytorch training codes better, I start to follow a full totorial a
 
 # ML Intro
 <p align="center">
-    <img src="2022-06-14-16-23-53.png" width="300" /> <br>
+    <img src="/posts/2022-06-14-16-23-53.png" width="300" /> <br>
     <a href="https://jovian.ai/aakashns/machine-learning-intro">Image source</a> 
 </p>
 
