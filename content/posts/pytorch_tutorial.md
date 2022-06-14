@@ -1,7 +1,7 @@
 ---
 title: "Pytorch_tutorial"
 date: 2022-06-14T15:52:29+08:00
-draft: true
+draft: False
 ---
 
 To understand pytorch training codes better, I start to follow a full totorial and summarize my progress here. 
