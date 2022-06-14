@@ -1,5 +1,5 @@
 ---
-title: "Pytorch_tutorial"
+title: "Pytorch Tutorial"
 date: 2022-06-14T15:52:29+08:00
 draft: False
 ---
