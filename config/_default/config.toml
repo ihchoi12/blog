@@ -19,6 +19,10 @@ defaultContentLanguageInSubdir = false
 # Uncomment for google analytics
 # googleAnalytics = "UA-123-45"
 
+pygmentsCodefences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsStyle = "monokai"
+
 [markup]
   # Do not modify markup.highlight
   [markup.highlight]
