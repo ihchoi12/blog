@@ -26,7 +26,7 @@ Unlike classical programming where we input data and algorithm (rules) to get th
 - specify ```require_grad = True``` of a tensor to reduce unnecessary gradient calculation cost  
 
 Example:
-```Python
+```python
 # Create tensors.
 x = torch.tensor(3.)
 w = torch.tensor(4., requires_grad=True)
@@ -39,6 +39,12 @@ y.backward()
 print('dy/dx:', x.grad)
 print('dy/dw:', w.grad)
 print('dy/db:', b.grad)
+```
+```c++
+// hello c++
+int main () {
+    return 0;
+}
 ```
 
 [output]
