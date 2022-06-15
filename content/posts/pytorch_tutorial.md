@@ -40,18 +40,13 @@ print('dy/dx:', x.grad)
 print('dy/dw:', w.grad)
 print('dy/db:', b.grad)
 ```
-```c++
-// hello c++
-# hi c++
-int main () {
-    return 0;
-}
+Output
 ```
-
-[output]
 dy/dx: None
 dy/dw: tensor(3.)
 dy/db: tensor(1.)
+```
+
 
 
 # Reference
