@@ -31,8 +31,8 @@ defaultContentLanguageInSubdir = false
     lineNos = true
     lineNumbersInTable = true
     noClasses = true
-    noHl = false
-    style = 'dracula'
+    noHl = true
+    style = 'pygments'
     tabWidth = 4
   [markup.tableOfContents]
     startLevel = 2
