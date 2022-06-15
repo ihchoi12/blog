@@ -32,7 +32,7 @@ defaultContentLanguageInSubdir = false
     lineNumbersInTable = true
     noClasses = true
     noHl = false
-    style = 'monokai'
+    style = 'colorful'
     tabWidth = 4
   [markup.tableOfContents]
     startLevel = 2
