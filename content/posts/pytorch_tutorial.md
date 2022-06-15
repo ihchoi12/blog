@@ -27,6 +27,7 @@ Unlike classical programming where we input data and algorithm (rules) to get th
 
 Example:
 ```python
+{{< highlight python  "linenos=table" >}}
 # Create tensors.
 x = torch.tensor(3.)
 w = torch.tensor(4., requires_grad=True)
@@ -39,6 +40,7 @@ y.backward()
 print('dy/dx:', x.grad)
 print('dy/dw:', w.grad)
 print('dy/db:', b.grad)
+{{< / highlight >}}
 ```
 ```c++
 // hello c++
