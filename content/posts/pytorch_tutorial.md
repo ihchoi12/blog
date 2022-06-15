@@ -26,7 +26,7 @@ Unlike classical programming where we input data and algorithm (rules) to get th
 - specify ```require_grad = True``` of a tensor to reduce unnecessary gradient calculation cost  
 
 Example:
-```python
+```py
 def test():
     print hi
 # Create tensors.
@@ -41,6 +41,7 @@ y.backward()
 print('dy/dx:', x.grad)
 print('dy/dw:', w.grad)
 print('dy/db:', b.grad)
+print hi
 ```
 ```c++
 // hello c++
