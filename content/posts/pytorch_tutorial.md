@@ -10,7 +10,7 @@ To understand pytorch training codes better, I start to follow a full totorial a
 # Basic Concepts
 <p align="center">
     <img src="/posts/2022-06-14-16-23-53.png" width="300" /> <br>
-    <a href="https://jovian.ai/aakashns/machine-learning-intro">Image source</a> 
+    <a href="https://jovian.ai/aakashns/machine-learning-intro">[source]</a> 
 </p>
 
 Unlike classical programming where we input data and algorithm (rules) to get the output, we give data and output to the ML training algorithm so that it can figure out the correct output for unknown data. 
@@ -121,6 +121,7 @@ import torch.nn as nn
 model = nn.Linear(3, 2) # 3 weights, 2 biases (3 inputs, 2 outputs)
 print(model.weight)
 print(model.bias)
+# model.parameters() returns a list of tensors weight and bias
 
 """
 Parameter containing:
@@ -142,8 +143,60 @@ import torch.nn.functional as F
 loss_fn = F.mse_loss
 loss = loss_fn(model(inputs), targets)
 ```
+- ```torch.optim.SGD```: optimize parameters using gradients instead of manually updating them (meaning of stochastic: batches are selected with random shuffling instead of the entire data)
+```py
+# Define optimizer
+opt = torch.optim.SGD(model.parameters(), lr=1e-5)
+"""
+tell the optimizer: "matrices model.parameters() need to be updated 
+"""
+```
+
+***
+Using all these built-ins, training model can be implemented again as follows:
+```py
+...
+# Utility function to train the model
+def fit(num_epochs, model, loss_fn, opt, train_dl):
+    
+    # Repeat for given number of epochs
+    for epoch in range(num_epochs):
+        
+        # Train with batches of data
+        for xb,yb in train_dl: 
+            # train_dl is a list of tuples of tensors (input, output), while each tensor has a batch of tensors
+            
+            # 1. Generate predictions
+            pred = model(xb)
+            
+            # 2. Calculate loss
+            loss = loss_fn(pred, yb)
+            
+            # 3. Compute gradients
+            loss.backward()
+            
+            # 4. Update parameters using gradients
+            opt.step()
+            
+            # 5. Reset the gradients to zero
+            opt.zero_grad()
+        
+        # Print the progress
+        if (epoch+1) % 10 == 0:
+            print('Epoch [{}/{}], Loss: {:.4f}'.format(epoch+1, num_epochs, loss.item())) # loss is tensor of a single value, so loss.item retrieves the value
+
+fit(100, model, loss_fn, opt, train_dl) # train for 100 epochs
+```
 
 
+### Note: why stochastic (batches with random shuffling) instead of the enrtire dataset?
+- memory: no need to fit the entire data at once 
+- accuracy: gives more chances for convergence
+- could take longer per epoch though (due to less parallelization).
+<p align="center">
+    <img src="/posts/sgd.png" width="300" /> <br>
+    <a href="https://arxiv.org/pdf/1802.09941.pdf">[source]</a> 
+</p>
 
 # Reference
 - https://www.youtube.com/watch?v=GIsg-ZUy0MY
