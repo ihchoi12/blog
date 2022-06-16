@@ -48,7 +48,7 @@ dy/db: tensor(1.)
 ```
 - PyTorch interoperates well with ```numpy```, so we can use ```numpy``` to easily handle our data and also take benefit of PyTorch (Autograd, tensor operations on GPU).  
 
-# Linear Regression
+# Linear Regression (y = xW^T + b)
 Linear regression is to a relationship between **input variables** (e.g., study time) and **target variables** (score). Each target variable is estimated to be a weighted sum of the input variables, offset by some constant (i.e., bias).
 
 Here, **learning** means to figure out the weights using the training data. How? Gradient Descent: Just adjust slightly many times towards better accuracy.
@@ -93,6 +93,57 @@ for i in range(100):
         w.grad.zero_()
         b.grad.zero_()
 ```
-** Note on ```torch.no_grad()```: By default, PyTorch tracks all operations (during FP) on tensors with ```required_grad=True```, which is called gradient context tracking by autograd engine. This tracking task has some processing and memory cost, so we deactivate it using ```torch.no_grad()``` when it's not needed.  
+** Note on ```torch.no_grad()```: By default, PyTorch tracks all operations (during FP) on tensors with ```required_grad=True```, which is called gradient context tracking by autograd engine. This tracking task has some processing and memory cost, so we deactivate it using ```torch.no_grad()``` when it's not needed. 
+
+
+##  Linear Regression using PyTorch Built-in
+- the above training process is common, so several built-ins are provided
+
+### packages
+- ```from torch.utils.data import TensorDataset```: allow us to handle certain rows (why? to handle data into batches, see below) of data as a tuple of (input, output)
+```py
+from torch.utils.data import TensorDataset
+# Define dataset
+train_ds = TensorDataset(inputs, targets)
+train_ds[0:3]
+```
+- ```from torch.utils.data import DataLoader```: split data into batches while shffuling
+```py
+from torch.utils.data import DataLoader
+# Define data loader
+batch_size = 11
+train_dl = DataLoader(train_ds, batch_size, shuffle=True)
+```
+- ```import torch.nn as nn```: contains utility classes for building neural networks
+```py
+import torch.nn as nn
+# Define model
+model = nn.Linear(3, 2) # 3 weights, 2 biases (3 inputs, 2 outputs)
+print(model.weight)
+print(model.bias)
+
+"""
+Parameter containing:
+tensor([[ 0.1312, -0.4246, -0.2341],
+        [ 0.4099,  0.4766,  0.1676]], requires_grad=True)
+Parameter containing:
+tensor([ 0.1603, -0.0098], requires_grad=True)
+"""
+
+# Here, model is an object (not a function), but we can do FP in the same way
+preds = model(inputs)
+``` 
+- ```import torch.nn.functional as F```: built-in loss function (e.g., mse_loss)
+```py
+...
+# Import nn.functional
+import torch.nn.functional as F
+# Define loss function
+loss_fn = F.mse_loss
+loss = loss_fn(model(inputs), targets)
+```
+
+
+
 # Reference
 - https://www.youtube.com/watch?v=GIsg-ZUy0MY
