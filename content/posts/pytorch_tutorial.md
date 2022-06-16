@@ -124,6 +124,7 @@ print(model.bias)
 # model.parameters() returns a list of tensors weight and bias
 
 """
+Output:
 Parameter containing:
 tensor([[ 0.1312, -0.4246, -0.2341],
         [ 0.4099,  0.4766,  0.1676]], requires_grad=True)
@@ -194,7 +195,7 @@ fit(100, model, loss_fn, opt, train_dl) # train for 100 epochs
 - accuracy: gives more chances for convergence
 - could take longer per epoch though (due to less parallelization).
 <p align="center">
-    <img src="/posts/sgd.png" width="300" /> <br>
+    <img src="/posts/sgd.png" width="600" /> <br>
     <a href="https://arxiv.org/pdf/1802.09941.pdf">[source]</a> 
 </p>
 
