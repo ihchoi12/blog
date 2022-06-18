@@ -112,7 +112,7 @@ train_ds[0:3]
 from torch.utils.data import DataLoader
 # Define data loader
 batch_size = 11
-train_dl = DataLoader(train_ds, batch_size, shuffle=True)
+train_dl = DataLoader(train_ds, batch_size, shuffle=True) # why shffle? data might be sorted by default, but we want to train overall data
 ```
 - ```import torch.nn as nn```: contains utility classes for building neural networks
 ```py
@@ -193,11 +193,130 @@ fit(100, model, loss_fn, opt, train_dl) # train for 100 epochs
 ### Note: why stochastic (batches with random shuffling) instead of the enrtire dataset?
 - memory: no need to fit the entire data at once 
 - accuracy: gives more chances for convergence
-- could take longer per epoch though (due to less parallelization).
+- total amount of computation should be the same eventually
+- performance will be lower though (due to less parallelization).
 <p align="center">
     <img src="/posts/sgd.png" width="600" /> <br>
     <a href="https://arxiv.org/pdf/1802.09941.pdf">[source]</a> 
 </p>
+
+# Logistic Regression for Image Classification
+The problem setup is different from the linear regression as follows:
+- Input: a number of variables -> a single image
+- Output: a number of variables -> a single label
+- Example: a single MNIST data consist of one image and it's label
+
+However, PyTorch is a library to handle tensors, so we need to convert the images to tensors. It can be doen using ```torchvision.transform```:
+```py
+import torchvision # a package of utilities for working with image data
+import torchvision.transforms as transforms
+# MNIST dataset, 1 data = (image, label)
+dataset = MNIST(root='data/', 
+                train=True,
+                transform=transforms.ToTensor())
+img_tensor, label = dataset[0]
+
+print(len(dataset), img_tensor.shape, label) 
+# 60000, torch.Size([1, 28, 28]), 5 
+```
+
+Then, we split the training dataset into **training set** and **validation set**, so that we can use different datasets for validation and training (note: MNIST has a separate dataset for test with 10000 images). What is the difference between validation and test? Validation is to evaluate the model during training and adjust hyperparameters (learning rate, etc.). Test is to measure the final accuracy and compare to other models. 
+
+```py
+from torch.utils.data import random_split
+
+train_ds, val_ds = random_split(dataset, [50000, 10000])
+len(train_ds), len(val_ds) # 50000, 10000
+```
+
+Then, we batch the data:
+```py
+from torch.utils.data import DataLoader
+
+batch_size = 128
+
+train_loader = DataLoader(train_ds, batch_size, shuffle=True) # invoke shuffle for each epoch to randomize (i.e., generalize), which helps faster convergence   
+val_loader = DataLoader(val_ds, batch_size) # no need to be shuffled (it's not for training)
+```
+
+We have prepared the dataset for training. Then, how can we set the model? Interestingly, the training model is conceptually the same as linear regression (y = xW^T + b). Each pixel (of 28*28) is weighted individually, to predict the probability of the image to be each label.
+```py
+import torch.nn as nn
+
+input_size = 28*28
+num_classes = 10 # number of outputs (labels)
+
+# Logistic regression model
+model = nn.Linear(input_size, num_classes)
+print(model.weight.shape) # torch.Size([10, 784])
+print(model.bias.shape) # torch.Size([10])
+``` 
+
+However, one issue is that the input (image) and weight shape mismatch (1,28,28 vs 784). So, we ```reshape``` the input before we do FP. We can add this additional functionality by extending the default ```nn.Module``` class from PyTorch:
+```py
+class MnistModel(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.linear = nn.Linear(input_size, num_classes)
+        
+    def forward(self, xb):
+        xb = xb.reshape(-1, 784)
+        # by giving -1 for the first dimension, PyTorch automatically calculate it depending on the input, so we can use it with any batch size of xb 
+        out = self.linear(xb)
+        return out
+    
+model = MnistModel()
+```
+
+Now, we can use the ```model``` for FP:
+```py
+for images, labels in train_loader:
+    print(images.shape)
+    outputs = model(images)
+    break
+
+print('outputs.shape : ', outputs.shape) 
+# outputs.shape :  torch.Size([128, 10])
+print('Sample outputs :\n', outputs[:2].data)
+# Sample outputs :
+# tensor([[ 0.0245,  0.0691, -0.1861,  0.1229, -0.1947, -0.1299,  0.1847, -0.2836, 0.2063, -0.1164], [-0.2538,  0.0495, -0.0900,  0.0783,  0.0670, -0.2608, -0.1726, -0.0452, 0.1272,  0.0451]])
+```
+
+Then, we want to convert the output into probability of each label. For this, we use Softmax function provided by ```import torch.nn.functional as F```:
+```py
+# Apply softmax for each output row
+probs = F.softmax(outputs, dim=1)
+
+# Look at sample probabilities
+print("Sample probabilities:\n", probs[:2].data)
+# Sample probabilities:
+# tensor([[0.1042, 0.1090, 0.0844, 0.1150, 0.0837, 0.0893, 0.1223, 0.0766, 0.1250, 0.0905], [0.0805, 0.1090, 0.0948, 0.1122, 0.1109, 0.0799, 0.0873, 0.0991, 0.1178, 0.1085]])
+# Add up the probabilities of an output row
+print("Sum: ", torch.sum(probs[0]).item())
+# Sum:  0.9999999403953552
+```
+
+Now, we can calculate the accuracy of our model as follows:
+```py
+def accuracy(outputs, labels):
+    _, preds = torch.max(outputs, dim=1)
+    # torch.max(dim=1) returns each row's largest element and the corresponding index.
+    return torch.tensor(torch.sum(preds == labels).item() / len(preds))
+```
+
+Although this accuracy is intuitive to human, we cannot use it for loss function in gradient descent algorithm, because:
+1. ```torch.max()``` and ```==``` are both non-continuous and non-differentiable operations
+2. by taking only the final label with the maximum probability, it does NOT have enough insight about how to update the weights of each label (i.e., each column in W)
+
+So, for the loss function in classification problems, we commonly use **cross entropy** instead. This cross entropy is also provided by ```torch.nn.functional```, and it internally includes the softmax operation as well (we need to pass the raw output). For a batch of data, the cross entropy averages out over all data samples. 
+```py
+loss_fn = F.cross_entropy
+# Loss for current batch of data
+loss = loss_fn(outputs, labels)
+# Interpretation: our model predicted the correct label with probability e^(-loss) in avg
+```   
+
+
 
 # Reference
 - https://www.youtube.com/watch?v=GIsg-ZUy0MY
