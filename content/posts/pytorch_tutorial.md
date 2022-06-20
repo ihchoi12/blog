@@ -433,7 +433,7 @@ class MnistModel(nn.Module):
 
 
 # Using a GPU
-As the dataset and model are getting bigger, we use GPUs to train our model in a reasonable amount of time. First, let's see how to move our data to GPU.
+As the dataset and model are getting bigger, we use GPUs to train our model in a reasonable amount of time. First, let's see how to move our data to GPU. We define a ```DeviceDataLoader``` which wraps the existing ```DataLoader``` and move the batches one by one to GPU. 
 ```py
 def get_default_device():
     """Pick GPU if available, else CPU"""
@@ -446,9 +446,54 @@ def to_device(data, device):
     if isinstance(data, (list,tuple)):
         return [to_device(x, device) for x in data]
     return data.to(device, non_blocking=True)
-``` 
+class DeviceDataLoader():
+    """Wrap a dataloader to move data to a device"""
+    def __init__(self, dl, device):
+        self.dl = dl
+        self.device = device
+        
+    def __iter__(self):
+        """Yield a batch of data after moving it to device"""
+        for b in self.dl: 
+            yield to_device(b, self.device)
+            # Keyword 'yield'? It generates a value to be returned when the object is accessed. Here, one batch of data will be moved to GPU and returned every time this dala loader is accessed in for loop.
 
-s
+    def __len__(self):
+        """Number of batches"""
+        return len(self.dl)
+
+device = get_default_device()
+train_loader = DeviceDataLoader(train_loader, device)
+``` 
+Note that we are moving only the data batch to be trained at the time to GPU using ```yield``` keyworkd. It's to reduce waste of GPU memories. Also, removing the trained data from GPU is automatically done by garbage collection.  
+
+Then, we move the model to the GPU:
+```py
+# Model (on GPU)
+model = MnistModel(input_size, hidden_size=hidden_size, out_size=num_classes)
+to_device(model, device)
+```
+
+# Convolutional Neural Network
+To solve more complex problems using ML, we need to use more powerful models. CNN (```nn.Conv2d```) is one example of that. 
+
+## Kernel and Convolution
+- Kernel: a matrix of weights 
+- Convolution: an operation of sliding the kernel over the 2D input data, performing an elementwise multiplication, and then summing up the results into a single output pixel 
+
+For multi-channel images, a different kernel is applied to each channels, and the outputs are added together pixel-wise.
+
+## Advantages
+- Fewer parameters compared to FC layer where we have weight for every input element
+- Sparsity of connections since each output element depends on only a small part of input elements, which makes FP and BP more efficient
+- Parameter sharing by using the kernel trained in one part of input to detect a similar pattern in another part as well
+
+## Max-pooling
+From each convolutional layer, we can use max-pooling layers to progressively decrease height & width of the output tensors 
+<p align="center">
+    <img src="/posts/max-pooling.png" width="300" /> <br>
+    <a href="https://jovian.ai/aakashns/05-cifar10-cnn">[source]</a> 
+</p>
 
 
 # Reference
