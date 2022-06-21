@@ -281,6 +281,7 @@ print('Sample outputs :\n', outputs[:2].data)
 # Sample outputs :
 # tensor([[ 0.0245,  0.0691, -0.1861,  0.1229, -0.1947, -0.1299,  0.1847, -0.2836, 0.2063, -0.1164], [-0.2538,  0.0495, -0.0900,  0.0783,  0.0670, -0.2608, -0.1726, -0.0452, 0.1272,  0.0451]])
 ```
+## Softmax: convert to probability
 
 Then, we want to convert the output into probability of each label. For this, we use Softmax function provided by ```import torch.nn.functional as F```:
 ```py
@@ -385,7 +386,7 @@ The above training algorithm works pretty well, but the accuracy improvement is 
 1. the learning rate is too high, so the model is "bouncing" around the optimal state
 2. the linear model is not "powerful" enough
 
-To make the model more powerful, we can add one more layer along with a hidden layer (ReLU) to add non-linearity:
+As one way to make the model more powerful, we can add one more layer along with a hidden layer (ReLU) to add non-linearity:
 ```py
 class MnistModel(nn.Module):
     """Feedfoward neural network with 1 hidden layer"""
@@ -488,13 +489,52 @@ For multi-channel images, a different kernel is applied to each channels, and th
 - Sparsity of connections since each output element depends on only a small part of input elements, which makes FP and BP more efficient
 - Parameter sharing by using the kernel trained in one part of input to detect a similar pattern in another part as well
 
-## Max-pooling
-From each convolutional layer, we can use max-pooling layers to progressively decrease height & width of the output tensors 
+## Pooling
+From each convolutional layer, we can use pooling layers to progressively decrease height & width of the output tensors 
 <p align="center">
     <img src="/posts/max-pooling.png" width="300" /> <br>
     <a href="https://jovian.ai/aakashns/05-cifar10-cnn">[source]</a> 
 </p>
+Note that there are several operations possible for pooling (e.g., max, avg).
 
+
+## Model
+Using the convolution and pooling operations, we can form a CNN model as follows:
+```py
+class Cifar10CnnModel(ImageClassificationBase):
+    def __init__(self):
+        super().__init__()
+        self.network = nn.Sequential(
+            nn.Conv2d(3, 32, kernel_size=3, padding=1),
+            nn.ReLU(),
+            nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
+            nn.ReLU(),
+            nn.MaxPool2d(2, 2), # output: 64 x 16 x 16
+
+            nn.Conv2d(64, 128, kernel_size=3, stride=1, padding=1),
+            nn.ReLU(),
+            nn.Conv2d(128, 128, kernel_size=3, stride=1, padding=1),
+            nn.ReLU(),
+            nn.MaxPool2d(2, 2), # output: 128 x 8 x 8
+
+            nn.Conv2d(128, 256, kernel_size=3, stride=1, padding=1),
+            nn.ReLU(),
+            nn.Conv2d(256, 256, kernel_size=3, stride=1, padding=1),
+            nn.ReLU(),
+            nn.MaxPool2d(2, 2), # output: 256 x 4 x 4
+
+            nn.Flatten(), 
+            nn.Linear(256*4*4, 1024),
+            nn.ReLU(),
+            nn.Linear(1024, 512),
+            nn.ReLU(),
+            nn.Linear(512, 10))
+        
+    def forward(self, xb):
+        return self.network(xb)
+```
+
+# R
 
 # Reference
 - https://www.youtube.com/watch?v=GIsg-ZUy0MY
