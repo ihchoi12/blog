@@ -114,6 +114,7 @@ from torch.utils.data import DataLoader
 batch_size = 11
 train_dl = DataLoader(train_ds, batch_size, shuffle=True) # why shffle? data might be sorted by default, but we want to train overall data
 ```
+
 - ```import torch.nn as nn```: contains utility classes for building neural networks
 ```py
 import torch.nn as nn
@@ -534,7 +535,36 @@ class Cifar10CnnModel(ImageClassificationBase):
         return self.network(xb)
 ```
 
-# R
+# Techniques for higher accuracy or better performance
+### Data Normalization
+- across each channel, subtract the mean, then divide by the standard deviation
+- prevent one channel with a higher or wider range of values affecting the final loss and gradients disproportionately
+- note that the same normalization (using the same stats) must be applied to validation and test dataset as well (since the model is trained on the normalized dataset)
+### Data Transformation
+- apply randomly chosen transformations, such as paddding & random crop, flipping, etc., while loading the data
+- generalize the model better
+- note that this transformation need to be applied to the training dataset only (since its to give more information to the training process)
+
+```py
+# Data transforms (normalization & data augmentation)
+import torchvision.transforms as tt
+stats = ((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010))
+train_tfms = tt.Compose([tt.RandomCrop(32, padding=4, padding_mode='reflect'), 
+                         tt.RandomHorizontalFlip(), 
+                         # tt.RandomRotate
+                         # tt.RandomResizedCrop(256, scale=(0.5,0.9), ratio=(1, 1)), 
+                         # tt.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1, hue=0.1),
+                         tt.ToTensor(), 
+                         tt.Normalize(*stats,inplace=True)])
+valid_tfms = tt.Compose([tt.ToTensor(), tt.Normalize(*stats)])
+```
+
+### DataLoader Parameters 
+- ```num_workers``` to leverage multiple CPU cores in parallel
+- ```pin_memory``` to avid repeated memory allocation and deallocation by using the same portion of RAM for loading each batch (its possible when all the batches have the same size)
+```py
+train_dl = DataLoader(train_ds, batch_size, shuffle=True, num_workers=3, pin_memory=True)
+```
 
 # Reference
 - https://www.youtube.com/watch?v=GIsg-ZUy0MY
