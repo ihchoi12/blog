@@ -1,6 +1,6 @@
 ---
 title: "RDMA"
-date: 2022-06-20T15:31:53Z
+date: 2022-06-25T03:34:25Z
 draft: false
 ---
 
@@ -38,7 +38,7 @@ Advantages: lower latency, CPU bypass
 
 # Basic Concepts
 <p align="center">
-    <img src="/posts/rdma-diagram.png" width="300" /> <br>
+    <img src="/posts/rdma-diagram.png" width="500" /> <br>
     <a href="https://www.infinibandta.org/roce-and-infiniband-which-should-i-choose/">[source]</a> 
 </p>
 

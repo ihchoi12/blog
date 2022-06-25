@@ -1,6 +1,6 @@
 ---
 title: "Infiniband"
-date: 2022-06-25T03:34:25Z
+date: 2022-06-20T15:31:53Z
 draft: false
 ---
 
@@ -14,7 +14,7 @@ draft: false
 
 ### Main components
 <p align="center">
-    <img src="/posts/infiniband-components.png" width="300" /> <br>
+    <img src="/posts/infiniband-components.png" width="700" /> <br>
     <a href="https://academy.nvidia.com/course/view.php?id=480">[source]</a> 
 </p>
 
@@ -68,7 +68,7 @@ draft: false
 - Traditionally, applications relied on OS for communications
 - IB enables applications to communicate w/o directly involving OS (application-centric approch)
 <p align="center">
-    <img src="/posts/infiniband-rdma.png" width="300" /> <br>
+    <img src="/posts/infiniband-rdma.png" width="700" /> <br>
     <a href="https://academy.nvidia.com/course/view.php?id=480">[source]</a> 
 </p>
 
