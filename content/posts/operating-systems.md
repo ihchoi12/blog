@@ -100,14 +100,18 @@ Process scheduler has two types of queue to implement the scheduling.
 - Job queue: As processes enter the RAM, they are put into the job queue, which consist of all processes in the system 
 - Ready queue: Once a process is ready and waiting to execute, it's moved into the ready queue
 
-Then, OS selects a process from the ready queue (according to the scheduling algorithm), and assign the CPU to the process. 
-
-
-# Basic Concepts
 <p align="center">
     <img src="/posts/img/process-scheduling.png" width="500"/> <br>
     <a href="https://www.youtube.com/watch?v=2h3eWaPx8SA">[source]</a> 
 </p>
+
+Then, OS selects a process from the ready queue (according to the scheduling algorithm), and assign the CPU to the process. Here, 3 cases can happen:
+1. The process completes execution and becomes terminated state (ends)
+2. Another process with a higher priority comes into the ready queue, so it gets swapped-out and into the list "partially executed and swapped-out processes", and then swapped into the ready queue again
+3. The process needs to use some I/O devices (e.g., PCIe devices), so it becomes **I/O Wait** state and get into I/O waiting queues. Once the I/O devices is available, it executes the I/O operation and go back to the ready queue.
+
+
+
 
 - What? to pick a ready process and allocate it to CPU
 - Who? short-term scheduler
@@ -251,5 +255,6 @@ Then, OS selects a process from the ready queue (according to the scheduling alg
 - Definition of System Call: The programmatic way in which a computer program requests a service from the kernel of OS. These calls are generally written in C or C++.
 
 
-##### References
-[1] https://www.youtube.com/watch?v=2i2N_Qo_FyM
+# References
+- https://www.youtube.com/watch?v=2i2N_Qo_FyM
+- https://www.youtube.com/watch?v=2h3eWaPx8SA
