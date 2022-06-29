@@ -9,7 +9,7 @@ To understand pytorch training codes better, I start to follow a full totorial a
 
 # Basic Concepts
 <p align="center">
-    <img src="/posts/2022-06-14-16-23-53.png" width="300" /> <br>
+    <img src="/posts/img/2022-06-14-16-23-53.png" width="300" /> <br>
     <a href="https://jovian.ai/aakashns/machine-learning-intro">[source]</a> 
 </p>
 
@@ -197,7 +197,7 @@ fit(100, model, loss_fn, opt, train_dl) # train for 100 epochs
 - total amount of computation should be the same eventually
 - performance will be lower though (due to less parallelization).
 <p align="center">
-    <img src="/posts/sgd.png" width="600" /> <br>
+    <img src="/posts/img/sgd.png" width="600" /> <br>
     <a href="https://arxiv.org/pdf/1802.09941.pdf">[source]</a> 
 </p>
 
@@ -493,7 +493,7 @@ For multi-channel images, a different kernel is applied to each channels, and th
 ## Pooling
 From each convolutional layer, we can use pooling layers to progressively decrease height & width of the output tensors 
 <p align="center">
-    <img src="/posts/max-pooling.png" width="300" /> <br>
+    <img src="/posts/img/max-pooling.png" width="300" /> <br>
     <a href="https://jovian.ai/aakashns/05-cifar10-cnn">[source]</a> 
 </p>
 Note that there are several operations possible for pooling (e.g., max, avg).

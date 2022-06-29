@@ -38,7 +38,7 @@ Advantages: lower latency, CPU bypass
 
 # Basic Concepts
 <p align="center">
-    <img src="/posts/rdma-diagram.png" width="500" /> <br>
+    <img src="/posts/img/rdma-diagram.png" width="500" /> <br>
     <a href="https://www.infinibandta.org/roce-and-infiniband-which-should-i-choose/">[source]</a> 
 </p>
 
@@ -48,3 +48,4 @@ Advantages: lower latency, CPU bypass
 
 # Reference
 - https://www.infinibandta.org/roce-and-infiniband-which-should-i-choose/
+- https://academy.nvidia.com/mod/scorm/view.php?id=8214
