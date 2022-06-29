@@ -4,11 +4,13 @@ date: 2021-06-29T08:58:30Z
 draft: false
 ---
 
-### Terminologies
+# Some Terminologies
 - Preemption: forcefully pause a running process (with PCB stored for resume later) and take the next ready process to the CPU 
-- Context Switching: Performed by dispatcher. Changing the process context (PCB) and state of two processes (1 Ready and 1 Run) for the preemption.
 - (CPU) Time Quantum: a time slot (duration) assigned to a process to use CPU (once expired, preemption happens)
 - Degree of Multi-programming: the max # of processes in ready that RAM can hold at a time
+
+# Context Switching 
+Interrupts (e.g., from H/W or higher priority process) cause the OS to change a CPU from it's current task to run a kernel module called dispatcher, which happens frequently. The dispatcher saves context (represented in the PCB) of the currently running process, and restore context of the interrupting process. It happens during the CPU preemption. 
 
 # How process (or program) works?
 ##### Life-cycle of a program
@@ -72,7 +74,6 @@ State transitions happen by OS or intrinsic logic of the process
 -----
 Turn Around Time = Completion Time - Arrival Time = Total Burst Time + Total Waiting Time
 
-
 # Schedulers
 ### 3 types of schedulers in state transitions 
 All of them affects performance
@@ -110,18 +111,6 @@ Then, OS selects a process from the ready queue (according to the scheduling alg
 2. Another process with a higher priority comes into the ready queue, so it gets swapped-out and into the list "partially executed and swapped-out processes", and then swapped into the ready queue again
 3. The process needs to use some I/O devices (e.g., PCIe devices), so it becomes **I/O Wait** state and get into I/O waiting queues. Once the I/O devices is available, it executes the I/O operation and go back to the ready queue.
 
-
-
-
-- What? to pick a ready process and allocate it to CPU
-- Who? short-term scheduler
-- Where? from ready to running state
-- When? a process moves..
-  - run -> terminate (always)
-  - run -> wait (always)
-  - run -> ready (due to quantum expiration or a new process with higher priority) (always)
-  - new -> ready (not always)
-  - wait -> ready (not always)
 
 ### Scheduling Algorithms
 ##### FCFS
