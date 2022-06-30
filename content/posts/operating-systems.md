@@ -10,7 +10,7 @@ draft: false
 - Degree of Multi-programming: the max # of processes in ready that RAM can hold at a time
 
 # Context Switching 
-Interrupts (e.g., from H/W or higher priority process) cause the OS to change a CPU from it's current task to run a kernel module called dispatcher, which happens frequently. The dispatcher saves context (represented in the PCB) of the currently running process, and restore context of the interrupting process. It happens during the CPU preemption. 
+Interrupts (e.g., from H/W or higher priority process) cause the OS to change a CPU from it's current task to run a kernel module called dispatcher, which happens frequently. The dispatcher saves context (represented in the PCB) of the currently running process, and restore context of the interrupting process. It happens during the CPU preemption. Note that the CPU is not running any process during the context switching, so it's a pure overhead (typically it's a few ms). 
 
 # How process (or program) works?
 ##### Life-cycle of a program
