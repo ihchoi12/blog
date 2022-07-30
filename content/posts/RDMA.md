@@ -44,6 +44,12 @@ Advantages: lower latency, CPU bypass
 
 - OFA s/w: open source s/w stacks provided by the Open Fabrics Alliance which supports RDMA
 
+## Verbs
+- Two sided (channel semantics)
+    - Send/Receive
+- One sided (memory semantics)
+    - Read/Write: the initiator specifies the source or destination location, w/o involving the other end CPUs.
+
 
 
 # Reference
