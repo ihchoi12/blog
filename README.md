@@ -8,8 +8,10 @@ cd public;
 git checkout master;
 cd ../themes/eureka;
 git checkout master;
+cd ../../
 
 ### other cmds
 hugo new posts/test1.md
 hugo server
 ./deploy.sh
+git submodule add -b master https://github.com/ihchoi12/ihchoi12.github.io.git public
