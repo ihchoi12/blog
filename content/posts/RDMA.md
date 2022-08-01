@@ -4,7 +4,7 @@ date: 2022-06-25T03:34:25Z
 draft: false
 ---
 
-# hi
+# hi please
 
 # Terminologies 
 - Infiniband (IB): consist of IB adapters and switches
