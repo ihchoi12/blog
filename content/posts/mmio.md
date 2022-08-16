@@ -35,6 +35,6 @@ draft: false
         * Does not need any special instructions
         * Each device register is assigned to a memory address space
         * Uses native CPU load/store instructions: *LDR/STR Reg, [Reg, #imm]*
-        * If we write to the special memory location assigned to a device register (*STR*), the written data is sent to the corresponding I/O device
+        * If we write to the special memory location assigned to a device register (*STR*), the written data is sent to the corresponding I/O device (by PCIe write operations)
 
 # MMIO
