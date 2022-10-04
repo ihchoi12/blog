@@ -24,6 +24,11 @@ avatar = "images/icon.png"
   iconPack = "fab"
   url = "https://example.com/"
 
+[[social]]
+  icon = "cv"
+  iconPack = "fab"
+  url = "https://example.com/"
+
 +++
 
 ## Self Introduction
