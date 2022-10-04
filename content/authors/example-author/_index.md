@@ -1,6 +1,6 @@
 +++
 # Name
-title = "Example Author"
+title = "Inho Choi"
 role = "Example Role"
 bio = "Aenean vel bibendum quam. Aliquam at mollis quam. Proin efficitur."
 avatar = "images/icon.png"
@@ -25,7 +25,7 @@ avatar = "images/icon.png"
   url = "https://example.com/"
 
 [[social]]
-  icon = "cv"
+  icon = "envelope"
   iconPack = "fab"
   url = "https://example.com/"
 
