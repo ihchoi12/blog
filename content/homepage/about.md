@@ -1,5 +1,5 @@
 +++
-title = "Example Author"
+title = "Inho Choi"
 weight = 1
 draft = false
 
@@ -24,6 +24,11 @@ avatar = "images/icon.png"
 [[social]]
   icon = "github"
   iconPack = "fab"
+  url = "https://example.com/"
+
+[[social]]
+  icon = "cv"
+  iconPack = "ai"
   url = "https://example.com/"
 
 [widget]
