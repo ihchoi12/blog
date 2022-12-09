@@ -3,13 +3,13 @@ title = "Inho Choi"
 weight = 1
 draft = false
 
-role = "Example Role"
-bio = "Aenean vel bibendum quam. Aliquam at mollis quam. Proin efficitur."
+role = "Ph.D. Student"
+bio = "I am a Ph.D. student."
 avatar = "images/icon.png"
 
 [organization]
-  name = "Example Organization"
-  url = "https://example.com/"
+  name = "National University of Singpoare, School of Computing"
+  url = "inhochoi@comp.nus.edu.sg"
 
 [[social]]
   icon = "envelope"
