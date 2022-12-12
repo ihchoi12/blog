@@ -3,10 +3,7 @@ title = "Inho Choi"
 weight = 1
 draft = false
 
-role = "Ph.D. Student"
-bio = 
-"I am a Ph.D. student in Computer Science at National University of Singapore, 
-working with <a href=\"https://www.comp.nus.edu.sg/~lijl/\">Prof. Jialin Li</a>."
+role = "Ph.D. Student" 
 avatar = "images/icon.png"
 
 [organization]
@@ -58,12 +55,46 @@ avatar = "images/icon.png"
     # Options: fixed, local, scroll.
     attachment = ""
 +++
+## 
+<p style="font-size:20px">
+Hi! I am a Ph.D. student in Computer Science at National University of Singapore, 
+working with <a href="https://www.comp.nus.edu.sg/~lijl/" >Prof. Jialin Li</a>.
+My main research focus is on distributed systems, datacenter networks, and data plane 
+operating systems. 
+</p> 
 
-## Self Introduction
-
-Cras ex dui, tristique a libero eget, consectetur semper ligula. Nunc augue arcu, malesuada a nisi et, molestie finibus metus. Sed lacus odio, ultricies a nisl vitae, sollicitudin tempor ipsum. Vivamus quis feugiat arcu. Sed mi nunc, efficitur quis tellus vitae, posuere mattis metus. Phasellus in mattis dui. Nullam blandit, augue non ullamcorper dapibus, lacus dui molestie massa, in iaculis purus lectus eu lectus. Duis hendrerit lacinia tellus, sit amet feugiat dolor placerat id. Aenean ac velit massa. Vivamus feugiat dui at magna viverra, ut dictum nunc rutrum. Duis eget sapien finibus, lobortis orci id, vestibulum tellus. Maecenas lobortis urna libero, quis fermentum lectus lobortis nec. Nullam laoreet volutpat libero, ac mattis magna ullamcorper quis. Duis eget ipsum eu nisi mattis cursus et vitae turpis.
-
-Aliquam pretium diam eget leo feugiat finibus. Donec malesuada commodo ipsum. Aenean a massa in lacus venenatis vestibulum. Duis vel sem quis elit iaculis consectetur et quis dolor. Morbi eu ipsum hendrerit, malesuada ante sed, dapibus est. Suspendisse feugiat nulla ut gravida convallis. Phasellus id massa posuere, rhoncus justo ut, porttitor dolor. Nulla ultrices malesuada egestas. Nunc fermentum tincidunt sem ac vulputate. Donec mollis sollicitudin justo eget varius. Donec ornare velit et felis blandit, id molestie sapien lobortis. Morbi eget tristique justo. Mauris posuere, nibh eu laoreet ultricies, ligula erat iaculis sapien, vel dapibus lacus libero ut diam. Etiam viverra ante felis, et scelerisque nunc pellentesque vitae. Praesent feugiat dictum molestie.
+## Education
+<div id="header">
+    <p style="float: left; width: 80%; text-align: left;">
+      <a href="https://www.comp.nus.edu.sg/~lijl/" class="font-bold">National University of Singapore</a>
+    </p>
+    <p style="float: left; width: 20%; text-align: right;">
+      Singapore
+    </p>
+    <p style="float: left; width: 80%; text-align: left;">
+      Ph.D. Student in Computer Science 
+      (Advisor: <a href="https://www.comp.nus.edu.sg/~lijl/" >Dr. Jialin Li</a>)
+    </p>
+    <p style="float: left; width: 20%; text-align: right;">
+      Aug 2019 — Present
+    </p>
+</div>
+<br><br><br>
+<div id="header">
+    <p style="float: left; width: 80%; text-align: left;">
+      <a href="https://www.comp.nus.edu.sg/~lijl/" class="font-bold">Yonsei University</a>
+    </p>
+    <p style="float: left; width: 20%; text-align: right;">
+      Seoul, South Korea
+    </p>
+    <p style="float: left; width: 80%; text-align: left;">
+      B.Sc. 
+    </p>
+    <p style="float: left; width: 20%; text-align: right;">
+      Aug 2019 — Present
+    </p>
+</div>
+<br>
 
 ## Details  
 
