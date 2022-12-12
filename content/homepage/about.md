@@ -11,7 +11,7 @@ avatar = "images/icon.png"
 
 [organization]
   name = "National University of Singpoare, School of Computing"
-  url = "inhochoi@comp.nus.edu.sg"
+  url = "https://www.comp.nus.edu.sg/"
 
 [[social]]
   icon = "envelope"
