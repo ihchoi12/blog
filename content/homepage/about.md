@@ -58,10 +58,11 @@ avatar = "images/icon.png"
 ## 
 <p style="font-size:20px">
 Hi! I am a Ph.D. student in Computer Science at National University of Singapore, 
-working with <a href="https://www.comp.nus.edu.sg/~lijl/" >Prof. Jialin Li</a>.
+working with <a href="https://www.comp.nus.edu.sg/~lijl/">Prof. Jialin Li</a>.
 My main research focus is on distributed systems, datacenter networks, and data plane 
 operating systems. 
 </p> 
+<br style = “line-height:100px;”>
 
 ## Education
 <div id="header">
@@ -82,29 +83,46 @@ operating systems.
 <br><br><br>
 <div id="header">
     <p style="float: left; width: 80%; text-align: left;">
-      <a href="https://www.comp.nus.edu.sg/~lijl/" class="font-bold">Yonsei University</a>
+      <a href="https://www.yonsei.ac.kr/en_sc/index.jsp" class="font-bold">Yonsei University</a>
     </p>
     <p style="float: left; width: 20%; text-align: right;">
       Seoul, South Korea
     </p>
     <p style="float: left; width: 80%; text-align: left;">
-      B.Sc. 
+      Bachelor's Degree in Computer Science
     </p>
     <p style="float: left; width: 20%; text-align: right;">
-      Aug 2019 — Present
+      Mar 2012 — Aug 2019
     </p>
 </div>
-<br>
 
-## Details  
+<br style = “line-height:100px;”>
+<br style = “line-height:100px;”>
+<br style = “line-height:100px;”>
 
-Nunc pellentesque vitae:
+## Publications
+<b>[NSDI '23]
+<a href=""> Hydra: Serialization-Free Network Ordering for Strongly Consistent Distributed Applications</a> </b> <br>
+<u>Inho Choi</u>, Ellis Michael, Yunfan Li, Dan Ports, and Jialin Li.
+<!-- Proceedings of the 20th USENIX Conference on Network Systems Design and Implementation -->
+
+<b>[S\&P (Oakland) '20]]
+<a href="https://ihchoi12.github.io/assets/tran2020stealthier.pdf">
+A Stealthier Partitioning Attack against Bitcoin Peer-to-Peer Network</a> </b> <br>
+Muoi Tran, <u>Inho Choi</u>, Gi Jun Moon, Viet-Anh Vu, and Min Suk Kang.
+<!-- In Proceedings of IEEE Symposium on Security and Privacy, May 2020. -->
+
+<b>[UbiComp '17]]
+<a href="https://ubicomp-mental-health.github.io/papers/2017/stress-kye.pdf">
+Multimodal Data Collection Framework for Mental Stress Monitoring</a> </b> <br>
+Saewon Kye, Junhyung Moon, Juneil Lee, <u>Inho Choi</u>, Dongmi Cheon, and Kyoungwoo Lee.
+<!-- 2017 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2017 ACM International Symposium on Wearable Computers, Sep, 2017. -->
+
+<!-- Nunc pellentesque vitae:
 - Morbi accumsan nibh efficitur diam molestie, non dignissim diam facilisis.
 - Donec dignissim leo in mollis faucibus.
 - Donec blandit lacus a pellentesque fermentum.
+ -->
+<br style = “line-height:100px;”>
 
-Donec mollis sollicitudin:
-- Nunc dictum purus ornare purus consectetur, eu pellentesque massa ullamcorper.
-- Aliquam eu leo vitae justo aliquam tincidunt.
-- Fusce non massa id augue interdum feugiat sed et nulla.
-- Vivamus molestie augue in tristique laoreet.
+ ## Experiences
