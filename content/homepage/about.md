@@ -16,17 +16,17 @@ avatar = "images/icon.png"
   url = "mailto:inhochoi@comp.nus.edu.sg"
 
 [[social]]
-  icon = "twitter"
-  iconPack = "fab"
-  url = "https://example.com/"
-
-[[social]]
   icon = "github"
   iconPack = "fab"
   url = "https://example.com/"
 
 [[social]]
   icon = "cv"
+  iconPack = "ai"
+  url = "https://example.com/"
+
+[[social]]
+  icon = "google-scholar"
   iconPack = "ai"
   url = "https://example.com/"
 
@@ -65,58 +65,106 @@ operating systems.
 <br style = “line-height:100px;”>
 
 ## Education
-<div id="header">
-    <p style="float: left; width: 80%; text-align: left;">
-      <a href="https://www.comp.nus.edu.sg/~lijl/" class="font-bold">National University of Singapore</a>
-    </p>
-    <p style="float: left; width: 20%; text-align: right;">
-      Singapore
-    </p>
-    <p style="float: left; width: 80%; text-align: left;">
-      Ph.D. Student in Computer Science 
-      (Advisor: <a href="https://www.comp.nus.edu.sg/~lijl/" >Dr. Jialin Li</a>)
-    </p>
-    <p style="float: left; width: 20%; text-align: right;">
-      Aug 2019 — Present
-    </p>
-</div>
-<br><br><br>
-<div id="header">
-    <p style="float: left; width: 80%; text-align: left;">
-      <a href="https://www.yonsei.ac.kr/en_sc/index.jsp" class="font-bold">Yonsei University</a>
-    </p>
-    <p style="float: left; width: 20%; text-align: right;">
-      Seoul, South Korea
-    </p>
-    <p style="float: left; width: 80%; text-align: left;">
-      Bachelor's Degree in Computer Science
-    </p>
-    <p style="float: left; width: 20%; text-align: right;">
-      Mar 2012 — Aug 2019
-    </p>
-</div>
+  <div id="header">
+      <p style="float: left; width: 80%; text-align: left;">
+        <a href="https://www.comp.nus.edu.sg/~lijl/" class="font-bold">National University of Singapore</a>
+      </p>
+      <p style="float: left; width: 20%; text-align: right;">
+        Singapore
+      </p>
+      <p style="float: left; width: 80%; text-align: left;">
+        Ph.D. Student in Computer Science 
+        (Advisor: <a href="https://www.comp.nus.edu.sg/~lijl/" >Dr. Jialin Li</a>)
+      </p>
+      <p style="float: left; width: 20%; height: 50px; text-align: right;">
+        Aug 2019 — Present
+      </p>
+      <!--  -->
+      <p style="float: left; width: 80%; text-align: left;">
+        <a href="https://www.yonsei.ac.kr/en_sc/index.jsp" class="font-bold">Yonsei University</a>
+      </p>
+      <p style="float: left; width: 20%; text-align: right;">
+        Seoul, South Korea
+      </p>
+      <p style="float: left; width: 80%; text-align: left;">
+        Bachelor's Degree in Computer Science
+      </p>
+      <p style="float: left; width: 20%; height: 50px; text-align: right;">
+        Mar 2012 — Aug 2019
+      </p>
+      <!--  -->
+      <p style="float: left; width: 80%; text-align: left;">
+        <a href="https://www.yonsei.ac.kr/en_sc/index.jsp" class="font-bold">Uppsala University</a>
+      </p>
+      <p style="float: left; width: 20%; text-align: right;">
+        Uppsala, Sweden
+      </p>
+      <p style="float: left; width: 80%; text-align: left;">
+        Exchange Student in Information Technology
+      </p>
+      <p style="float: left; width: 20%; height: 100px; text-align: right;">
+        Aug 2017 - Jan 2018
+      </p>
+  </div>
 
-<br style = “line-height:100px;”>
-<br style = “line-height:100px;”>
-<br style = “line-height:100px;”>
 
 ## Publications
-<b>[NSDI '23]
-<a href=""> Hydra: Serialization-Free Network Ordering for Strongly Consistent Distributed Applications</a> </b> <br>
-<u>Inho Choi</u>, Ellis Michael, Yunfan Li, Dan Ports, and Jialin Li.
-<!-- Proceedings of the 20th USENIX Conference on Network Systems Design and Implementation -->
+  <b>[NSDI '23]
+  <a href=""> Hydra: Serialization-Free Network Ordering for Strongly Consistent Distributed Applications</a> </b> <br>
+  <b><u>Inho Choi</u></b>, Ellis Michael, Yunfan Li, Dan Ports, and Jialin Li. <br>
+  Proceedings of the 20th USENIX Conference on Network Systems Design and Implementation
 
-<b>[S\&P (Oakland) '20]]
-<a href="https://ihchoi12.github.io/assets/tran2020stealthier.pdf">
-A Stealthier Partitioning Attack against Bitcoin Peer-to-Peer Network</a> </b> <br>
-Muoi Tran, <u>Inho Choi</u>, Gi Jun Moon, Viet-Anh Vu, and Min Suk Kang.
-<!-- In Proceedings of IEEE Symposium on Security and Privacy, May 2020. -->
+  <b>[S\&P (Oakland) '20]]
+  <a href="https://ihchoi12.github.io/assets/tran2020stealthier.pdf">
+  A Stealthier Partitioning Attack against Bitcoin Peer-to-Peer Network</a> </b> <br>
+  Muoi Tran, <b><u>Inho Choi</u></b>, Gi Jun Moon, Viet-Anh Vu, and Min Suk Kang. <br>
+  In Proceedings of IEEE Symposium on Security and Privacy, May 2020.
 
-<b>[UbiComp '17]]
-<a href="https://ubicomp-mental-health.github.io/papers/2017/stress-kye.pdf">
-Multimodal Data Collection Framework for Mental Stress Monitoring</a> </b> <br>
-Saewon Kye, Junhyung Moon, Juneil Lee, <u>Inho Choi</u>, Dongmi Cheon, and Kyoungwoo Lee.
-<!-- 2017 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2017 ACM International Symposium on Wearable Computers, Sep, 2017. -->
+  <b>[UbiComp '17]]
+  <a href="https://ubicomp-mental-health.github.io/papers/2017/stress-kye.pdf">
+  Multimodal Data Collection Framework for Mental Stress Monitoring</a> </b> <br>
+  Saewon Kye, Junhyung Moon, Juneil Lee, <b><u>Inho Choi</u></b>, Dongmi Cheon, and Kyoungwoo Lee. <br>
+  2017 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2017 ACM International Symposium on Wearable Computers, Sep, 2017.
+
+  <!-- Nunc pellentesque vitae:
+  - Morbi accumsan nibh efficitur diam molestie, non dignissim diam facilisis.
+  - Donec dignissim leo in mollis faucibus.
+  - Donec blandit lacus a pellentesque fermentum.
+   -->
+
+<br style = “line-height:100px;”>
+
+## Awards
+<div>
+    <p style="float: left; width: 60%; text-align: left;">
+      <a href="https://www.comp.nus.edu.sg/programmes/pg/awards/deans/" class="font-bold">Research Achievement Award</a>
+    </p>
+    <p style="float: left; width: 40%; text-align: right;">
+      National University of Singapore
+    </p>
+    <p style="float: left; width: 100%; height: 50px; text-align: right;">
+      Jan 2023
+    </p>
+    <p style="float: left; width: 60%; text-align: left;">
+      <a href="https://www.comp.nus.edu.sg/programmes/pg/phdcs/scholarships/#financial" class="font-bold">NUS Research Scholarship</a>
+    </p>
+    <p style="float: left; width: 40%; text-align: right;">
+      National University of Singapore
+    </p>
+    <p style="float: left; width: 100%; height: 50px; text-align: right;">
+      Aug 2018 - Present
+    </p>
+    <p style="float: left; width: 60%; text-align: left;">
+      <a href="https://cs.yonsei.ac.kr:59290/eng/index.php" class="font-bold">Honors - 1st Semester, 2018</a>
+    </p>
+    <p style="float: left; width: 40%; text-align: right;">
+      Yonsei University
+    </p>
+    <p style="float: left; width: 100%; height: 100px; text-align: right;">
+      Aug 2018
+    </p>
+</div>
+
 
 <!-- Nunc pellentesque vitae:
 - Morbi accumsan nibh efficitur diam molestie, non dignissim diam facilisis.
