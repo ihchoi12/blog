@@ -7,8 +7,3 @@
   name = "Posts"
   url = "/posts/"
   weight = 2
-
-[[main]]
-  name = "Docs"
-  url = "/docs/"
-  weight = 3
