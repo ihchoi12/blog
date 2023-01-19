@@ -10,6 +10,10 @@ cd ../themes/eureka;
 git checkout master;
 cd ../../
 
+### How to upload a file (e.g., cv.pdf) and link using <a> tag
+1. put the file into ./public/assets/
+2. the url is: https://ihchoi12.github.io/assets/[file-name] 
+
 ### other cmds
 hugo new posts/test1.md
 hugo server
