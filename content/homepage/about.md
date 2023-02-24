@@ -109,7 +109,7 @@ operating systems.
 
 ## Publications
   <b>[NSDI '23]
-  <a href=""> Hydra: Serialization-Free Network Ordering for Strongly Consistent Distributed Applications</a> </b> <br>
+  <a href="https://www.usenix.org/conference/nsdi23/presentation/choi"> Hydra: Serialization-Free Network Ordering for Strongly Consistent Distributed Applications</a> </b> <br>
   <b><u>Inho Choi</u></b>, Ellis Michael, Yunfan Li, Dan Ports, and Jialin Li. <br>
   Proceedings of the 20th USENIX Conference on Network Systems Design and Implementation<br>
   [ To Appear ]
