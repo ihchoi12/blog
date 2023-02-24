@@ -23,7 +23,7 @@ avatar = "images/inho.png"
 [[social]]
   icon = "cv"
   iconPack = "ai"
-  url = "https://ihchoi12.github.io/assets/inho-cv.pdf"
+  url = "https://ihchoi12.github.io/assets/inho_cv.pdf"
 
 [[social]]
   icon = "google-scholar"
