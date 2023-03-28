@@ -123,11 +123,11 @@ operating systems.
   <a href="https://www.youtube.com/watch?v=MYuj7iksxKA"> Talk </a> |
   <a href="https://erebus-attack.comp.nus.edu.sg/"> Website </a>]
   <br><br>
-  <b>[UbiComp '17]
+  <b>[UbiComp Workshop '17]
   <a href="https://ubicomp-mental-health.github.io/papers/2017/stress-kye.pdf">
   Multimodal Data Collection Framework for Mental Stress Monitoring</a> </b> <br>
   Saewon Kye, Junhyung Moon, Juneil Lee, <b><u>Inho Choi</u></b>, Dongmi Cheon, and Kyoungwoo Lee. <br>
-  2017 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2017 ACM International Symposium on Wearable Computers, Sep, 2017.<br>
+  In Proceedings of the 2017 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2017 ACM International Symposium on Wearable Computers. (Workshop Paper) <br>
   [<a href="https://ubicomp-mental-health.github.io/papers/2017/stress-kye.pdf"> PDF </a>]
 <br><br><br>
 ## Awards
