@@ -114,7 +114,7 @@ operating systems.
   Proceedings of the 20th USENIX Conference on Network Systems Design and Implementation<br>
   [ To Appear ]
   <br><br>
-  <b>[S\&P (Oakland) '20]]
+  <b>[S\&P (Oakland) '20]
   <a href="https://ihchoi12.github.io/assets/tran2020stealthier.pdf">
   A Stealthier Partitioning Attack against Bitcoin Peer-to-Peer Network</a> </b> <br>
   Muoi Tran, <b><u>Inho Choi</u></b>, Gi Jun Moon, Viet-Anh Vu, and Min Suk Kang. <br>
@@ -123,7 +123,7 @@ operating systems.
   <a href="https://www.youtube.com/watch?v=MYuj7iksxKA"> Talk </a> |
   <a href="https://erebus-attack.comp.nus.edu.sg/"> Website </a>]
   <br><br>
-  <b>[UbiComp '17]]
+  <b>[UbiComp '17]
   <a href="https://ubicomp-mental-health.github.io/papers/2017/stress-kye.pdf">
   Multimodal Data Collection Framework for Mental Stress Monitoring</a> </b> <br>
   Saewon Kye, Junhyung Moon, Juneil Lee, <b><u>Inho Choi</u></b>, Dongmi Cheon, and Kyoungwoo Lee. <br>
