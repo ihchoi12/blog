@@ -112,7 +112,9 @@ operating systems.
   <a href="https://www.usenix.org/conference/nsdi23/presentation/choi"> Hydra: Serialization-Free Network Ordering for Strongly Consistent Distributed Applications</a> </b> <br>
   <b><u>Inho Choi</u></b>, Ellis Michael, Yunfan Li, Dan Ports, and Jialin Li. <br>
   Proceedings of the 20th USENIX Conference on Network Systems Design and Implementation<br>
-  [ To Appear ]
+  [<a href="https://www.usenix.org/system/files/nsdi23-choi.pdf"> PDF </a> | 
+  <a href="https://www.youtube.com/watch?v=1TmAhFjczfs"> Talk </a> |
+  <a href="https://www.usenix.org/system/files/nsdi23_slides_choi.pdf"> Slide </a>]
   <br><br>
   <b>[S\&P (Oakland) '20]
   <a href="https://ihchoi12.github.io/assets/tran2020stealthier.pdf">
@@ -164,6 +166,19 @@ operating systems.
  ## Experiences
  <div>
     <p style="float: left; width: 50%; text-align: left;">
+      <a href="https://www.yonsei.ac.kr/en_sc/index.jsp" class="font-bold">Research Intern </a>
+    </p>
+    <p style="float: left; width: 50%; text-align: right;">
+      AMD, Xilinx
+    </p>
+    <p style="float: left; width: 80%; text-align: left;">
+      FPGA Hardware / Software / System Design.
+    </p>
+    <p style="float: left; width: 20%; height: 50px; text-align: right;">
+      May 2023 — Aug 2023
+    </p>
+    <!--  -->
+    <p style="float: left; width: 50%; text-align: left;">
       <a href="https://www.yonsei.ac.kr/en_sc/index.jsp" class="font-bold">Research Intern</a>
     </p>
     <p style="float: left; width: 50%; text-align: right;">
@@ -173,7 +188,7 @@ operating systems.
       Systems & Network Security Lab (Advisor: Prof. <a href="https://netsp.kaist.ac.kr/" >Min Suk Kang</a>).
     </p>
     <p style="float: left; width: 20%; height: 50px; text-align: right;">
-      Mar 2012 — Aug 2019
+      Sep 2018 — Feb 2019
     </p>
     <!--  -->
     <p style="float: left; width: 80%; text-align: left;">
@@ -186,17 +201,20 @@ operating systems.
       Dependable Computing Lab (Advisor: Prof. <a href="http://dclab.yonsei.ac.kr/" >Kyoungwoo Lee</a>).
     </p>
     <p style="float: left; width: 20%; height: 50px; text-align: right;">
-      Aug 2017 - Jan 2018
+      Feb 2017 — May 2018
     </p>
     <!--  -->
     <p style="float: left; width: 50%; text-align: left;">
       <a href="" class="font-bold">Summer Internship</a>
     </p>
     <p style="float: left; width: 50%; text-align: right;">
-      IT Planning Team, Metlife Korea
+      Metlife Korea
     </p>
-    <p style="float: left; width: 100%; height: 100px; text-align: right;">
-      Aug 2019 — Present
+    <p style="float: left; width: 80%; text-align: left;">
+      IT Planning Team.
+    </p>
+    <p style="float: left; width: 20%; height: 50px; text-align: right;">
+      July 2018 — Aug 2018
     </p>
     <!--  -->
 </div>
