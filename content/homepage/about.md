@@ -108,6 +108,13 @@ operating systems.
   </div>
 
 ## Publications
+  <b>[SIGCOMM '23]
+  <a href="https://conferences.sigcomm.org/sigcomm/2023/"> Network Load Balancing with In-network Reordering Support for RDMA</a> </b> <br>
+  Cha Hwan Song, Xin Zhe Khooi, Raj Joshi, <b><u>Inho Choi</u></b>, Jialin Li, and Mun Choon Chan. <br>
+  Proceedings of the 2023 ACM SIGCOMM Conference <br>
+  [ To Appear ]
+  <br><br>
+
   <b>[NSDI '23]
   <a href="https://www.usenix.org/conference/nsdi23/presentation/choi"> Hydra: Serialization-Free Network Ordering for Strongly Consistent Distributed Applications</a> </b> <br>
   <b><u>Inho Choi</u></b>, Ellis Michael, Yunfan Li, Dan Ports, and Jialin Li. <br>
@@ -116,6 +123,7 @@ operating systems.
   <a href="https://www.youtube.com/watch?v=1TmAhFjczfs"> Talk </a> |
   <a href="https://www.usenix.org/system/files/nsdi23_slides_choi.pdf"> Slide </a>]
   <br><br>
+  
   <b>[S\&P (Oakland) '20]
   <a href="https://ihchoi12.github.io/assets/tran2020stealthier.pdf">
   A Stealthier Partitioning Attack against Bitcoin Peer-to-Peer Network</a> </b> <br>
@@ -125,6 +133,7 @@ operating systems.
   <a href="https://www.youtube.com/watch?v=MYuj7iksxKA"> Talk </a> |
   <a href="https://erebus-attack.comp.nus.edu.sg/"> Website </a>]
   <br><br>
+  
   <b>[UbiComp Workshop '17]
   <a href="https://ubicomp-mental-health.github.io/papers/2017/stress-kye.pdf">
   Multimodal Data Collection Framework for Mental Stress Monitoring</a> </b> <br>
