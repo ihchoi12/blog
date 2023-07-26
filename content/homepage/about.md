@@ -108,6 +108,13 @@ operating systems.
   </div>
 
 ## Publications
+  <b>[APSYS '23]
+  <a href="https://apsys23.skku.edu/program.html"> Capybara: &mu;Second-scale live TCP migration</a> </b> <br>
+  <b><u>Inho Choi</u></b>, Nimish Wadekar, Raj Joshi, Joshua Fried, Dan R. K. Ports, Irene Zhang, Jialin Li. <br>
+  14th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys 2023) <br>
+  [ To Appear ]
+  <br><br>
+
   <b>[SIGCOMM '23]
   <a href="https://conferences.sigcomm.org/sigcomm/2023/"> Network Load Balancing with In-network Reordering Support for RDMA</a> </b> <br>
   Cha Hwan Song, Xin Zhe Khooi, Raj Joshi, <b><u>Inho Choi</u></b>, Jialin Li, and Mun Choon Chan. <br>
