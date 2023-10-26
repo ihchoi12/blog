@@ -112,14 +112,16 @@ operating systems.
   <a href="https://apsys23.skku.edu/program.html"> Capybara: &mu;Second-scale live TCP migration</a> </b> <br>
   <b><u>Inho Choi</u></b>, Nimish Wadekar, Raj Joshi, Joshua Fried, Dan R. K. Ports, Irene Zhang, Jialin Li. <br>
   14th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys 2023) <br>
-  [ To Appear ]
+  [<a href="https://dl.acm.org/doi/pdf/10.1145/3609510.3609813"> PDF </a> | 
+  <a href="https://www.youtube.com/watch?v=SlCJBGpn_4I"> Talk </a>]
   <br><br>
 
   <b>[SIGCOMM '23]
   <a href="https://conferences.sigcomm.org/sigcomm/2023/"> Network Load Balancing with In-network Reordering Support for RDMA</a> </b> <br>
   Cha Hwan Song, Xin Zhe Khooi, Raj Joshi, <b><u>Inho Choi</u></b>, Jialin Li, and Mun Choon Chan. <br>
   Proceedings of the 2023 ACM SIGCOMM Conference <br>
-  [ To Appear ]
+  [<a href="https://dl.acm.org/doi/pdf/10.1145/3603269.3604849"> PDF </a> | 
+  <a href="https://www.youtube.com/watch?v=SlCJBGpn_4I"> Talk </a>]
   <br><br>
 
   <b>[NSDI '23]
@@ -150,6 +152,15 @@ operating systems.
 <br><br><br>
 ## Awards
 <div>
+    <p style="float: left; width: 60%; text-align: left;">
+      <a href="https://www.comp.nus.edu.sg/programmes/pg/awards/deans/" class="font-bold">Research Incentive Award</a>
+    </p>
+    <p style="float: left; width: 40%; text-align: right;">
+      National University of Singapore
+    </p>
+    <p style="float: left; width: 100%; height: 50px; text-align: right;">
+      Oct 2023
+    </p>
     <p style="float: left; width: 60%; text-align: left;">
       <a href="https://www.comp.nus.edu.sg/programmes/pg/awards/deans/" class="font-bold">Research Achievement Award</a>
     </p>
