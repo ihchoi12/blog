@@ -57,7 +57,7 @@ avatar = "images/inho.png"
 +++
 ## 
 <p style="font-size:20px">
-Hi! I am a Ph.D. student in Computer Science at National University of Singapore, 
+I am a Ph.D. student in Computer Science at National University of Singapore, 
 working with <a href="https://www.comp.nus.edu.sg/~lijl/">Prof. Jialin Li</a>.
 My main research focus is on distributed systems, datacenter networks, and data plane 
 operating systems. 
