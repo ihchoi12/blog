@@ -4,7 +4,7 @@ weight = 1
 draft = false
 
 role = "Ph.D. Student" 
-avatar = "images/inho.png"
+avatar = "images/inho.jpg"
 
 [organization]
   name = "National University of Singpoare, School of Computing"
@@ -167,6 +167,19 @@ operating systems.
       Redmond, WA, USA
     </p>
     <p style="float: left; width: 80%; text-align: left;">
+      Systems Research Group (Mentor: <a href="https://irenezhang.net/" >Irene Zhang</a>)
+    </p>
+    <p style="float: left; width: 20%; height: 50px; text-align: right;">
+      June 2025 — Sep 2025
+    </p>
+    <!--  -->
+    <p style="float: left; width: 50%; text-align: left;">
+      <a class="font-bold">Microsoft Research</a> - PhD Research Intern
+    </p>
+    <p style="float: left; width: 50%; text-align: right;">
+      Redmond, WA, USA
+    </p>
+    <p style="float: left; width: 80%; text-align: left;">
       Systems Research Group (Mentor: <a href="https://drkp.net/" >Dan Ports</a>)
     </p>
     <p style="float: left; width: 20%; height: 50px; text-align: right;">
@@ -282,7 +295,7 @@ operating systems.
 
 <ul style="list-style-type: disc;">
   <li>
-    <b>Shadow PC Reviewer</b> — EuroSys '25 Fall
+    <b>Shadow PC Reviewer</b> — EuroSys '26 Spring, EuroSys '25 Fall
   </li>
   <li>
     <b>Student Volunteer</b> — SOSP '21
