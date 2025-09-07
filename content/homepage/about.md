@@ -59,8 +59,7 @@ avatar = "images/inho.jpg"
 <p style="font-size:20px">
 I am a Ph.D. student in Computer Science at National University of Singapore, 
 advised by <a href="https://www.comp.nus.edu.sg/~lijl/">Jialin Li</a>.
-My main research focus is on distributed systems, datacenter networks, and data plane 
-operating systems. 
+My research lies at the intersection of distributed systems, datacenter networks, dataplane operating systems, and machine learning for systems. 
 </p> 
 <br style = “line-height:100px;”>
 
@@ -108,6 +107,13 @@ operating systems.
   </div>
 
 ## Publications
+  <b>[APSYS '25]
+  <a> ML-native Dataplane Operating Systems </a> </b> <br>
+  <b><u>Inho Choi</u></b>, Anand Bonde, Jing Liu, Joshua Fried, Irene Zhang, Jialin Li. <br>
+  16th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys 2025) <br>
+  [To Appear]
+  <br><br>
+
   <b>[ArXiv]
   <a href="https://arxiv.org/pdf/2312.06207"> 
   A Primer on RecoNIC: RDMA-enabled Compute Offloading on SmartNIC</a> </b> <br>
@@ -295,7 +301,7 @@ operating systems.
 
 <ul style="list-style-type: disc;">
   <li>
-    <b>Shadow PC Reviewer</b> — EuroSys '26 Spring, EuroSys '25 Fall
+    <b>Shadow PC Reviewer</b> — EuroSys '26, EuroSys '25
   </li>
   <li>
     <b>Student Volunteer</b> — SOSP '21
