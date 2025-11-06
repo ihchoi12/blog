@@ -4,14 +4,19 @@
   weight = 1
 
 [[main]]
+  name = "Work in Progress"
+  url = "/#work-in-progress"
+  weight = 2
+
+[[main]]
   name = "Publications"
   url = "/#publications"
-  weight = 2
+  weight = 3
 
 [[main]]
   name = "Experiences"
   url = "/#experiences"
-  weight = 3
+  weight = 4
 
 #[[main]]
 #  name = "Posts"
