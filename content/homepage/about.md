@@ -59,9 +59,10 @@ avatar = "images/inho.jpg"
 <p style="font-size:20px">
 I am a Ph.D. student in Computer Science at National University of Singapore, 
 advised by <a href="https://www.comp.nus.edu.sg/~lijl/">Jialin Li</a>.
-My research lies at the intersection of distributed systems, datacenter networks, dataplane operating systems, and machine learning for systems. 
-</p> 
-<br style = “line-height:100px;”>
+My research lies at the intersection of distributed systems, datacenter networks, dataplane operating systems, and machine learning for systems.
+</p>
+
+<br>
 
 ## Education
   <div id="header">
@@ -101,10 +102,13 @@ My research lies at the intersection of distributed systems, datacenter networks
       <p style="float: left; width: 80%; text-align: left;">
         Exchange Student in Information Technology
       </p>
-      <p style="float: left; width: 20%; height: 100px; text-align: right;">
+      <p style="float: left; width: 20%; height: 50px; text-align: right;">
         Aug 2017 - Jan 2018
       </p>
+      <div style="clear: both;"></div>
   </div>
+
+<br>
 
 ## Publications
   <b>[APSYS '25]
@@ -162,9 +166,10 @@ My research lies at the intersection of distributed systems, datacenter networks
   Saewon Kye, Junhyung Moon, Juneil Lee, <b><u>Inho Choi</u></b>, Dongmi Cheon, and Kyoungwoo Lee. <br>
   In Proceedings of the 2017 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2017 ACM International Symposium on Wearable Computers. (Workshop Paper) <br>
   [<a href="https://ubicomp-mental-health.github.io/papers/2017/stress-kye.pdf"> PDF </a>]
-<br><br><br>
 
-  ## Experiences
+<br>
+
+## Experiences
   <div>
     <p style="float: left; width: 50%; text-align: left;">
       <a class="font-bold">Microsoft Research</a> - PhD Research Intern
@@ -244,8 +249,10 @@ My research lies at the intersection of distributed systems, datacenter networks
       July 2018 — Aug 2018
     </p>
     <!--  -->
+    <div style="clear: both;"></div>
   </div>
 
+<br>
 
 ## Awards
 <div>
@@ -282,10 +289,13 @@ My research lies at the intersection of distributed systems, datacenter networks
     <p style="float: left; width: 40%; text-align: right;">
       Yonsei University
     </p>
-    <p style="float: left; width: 100%; height: 100px; text-align: right;">
+    <p style="float: left; width: 100%; height: 50px; text-align: right;">
       Aug 2018
     </p>
+    <div style="clear: both;"></div>
 </div>
+
+<br>
 
 ## Mentoring Experiences
 
@@ -296,6 +306,7 @@ My research lies at the intersection of distributed systems, datacenter networks
   </li>
 </ul>
 
+<br>
 
 ## Services
 
@@ -307,6 +318,3 @@ My research lies at the intersection of distributed systems, datacenter networks
     <b>Student Volunteer</b> — SOSP '21
   </li>
 </ul>
-
-<br>
-
