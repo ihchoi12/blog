@@ -1,0 +1,347 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage[final]{pdfpages}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+ 
+\usepackage{multicol}
+\setlength{\columnsep}{0.1mm}
+
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\cmt}[1]{}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Huge Inho Choi}} & Email : \href{mailto:inhochoi@comp.nus.edu.sg}{inhochoi@comp.nus.edu.sg}\\
+  Ph.D. Candidate \cmt{(Research Interest: Distributed Systems)} & Website: \href{https://ihchoi12.github.io/}{https://ihchoi12.github.io/} \\
+  National University of Singapore & Mobile : +65-89298595 (Singapore)\\
+  & +82-1071547231 (Korea) \\ %& Mail : COM3\\
+  
+  
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National University of Singapore}{Singapore}
+      {Ph.D. Candidate in School of Computing (Advisor: \href{https://www.comp.nus.edu.sg/~lijl/}{Jialin Li});}{August 2019 -- December 2025 (Expected)}
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Yonsei University}{Seoul, Republic of Korea}
+      {Bachelor's Degree in Computer Science;}{March 2012 -- August 2019}
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Uppsala University}{Uppsala, Sweden}
+      {Exchange Student in Information Technology; \cmt{Grade: 4.5/5}}{August 2017 -- January 2018}
+  \resumeSubHeadingListEnd
+
+%----------- Research EXPERIENCE-----------------
+\section{Experiences}
+  % \resumeSubHeadingListStart
+  % \resumeSubheading
+  %     {Ph.D. Candidate}{Advisor: Assistant Professor. Jialin Li}
+  %     {National University of Singapore, School of Computing}{August 2019 - Present}
+  %     \resumeItemListStart
+  %       \resumeItem{Datacenter Networks \& Distributed Systems}
+  %         {Co-designing distributed systems with data center networks and specialized hardware for higher efficient and reliability.}
+        
+  %     \resumeItemListEnd
+  % \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {Microsoft Research - PhD Research Intern}
+      {Redmond, WA, USA}
+      {Systems Research Group (Mentor: \href{https://irenezhang.net/}{Irene Zhang})}
+      {June 2025 — September 2025}
+      \resumeItemListStart
+        \resumeItem{ML-native Datapath Operating Systems} {Designing ML-based adaptive and automatic OS performance tuning.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {Microsoft Research - PhD Research Intern}
+      {Redmond, WA, USA}
+      {Systems Research Group (Mentor: \href{https://drkp.net/}{Dan Ports})}
+      {June 2024 — August 2024}
+      \resumeItemListStart
+        \resumeItem{Applying Capybara (live TCP migration) for production systems} {Implemented live TCP migration system on Azure Web Cache cluster for seamless Redis server maintenance.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {AMD - PhD Research Intern}
+      {Singapore}
+      {Xilinx Lab - FPGA / System Design (Mentor: \href{https://www.linkedin.com/in/guanwen-henry-zhong-16817831/?originalSubdomain=sg}{Guanwen Zhong})}
+      {May 2023 - August 2023}
+      \resumeItemListStart
+        \resumeItem{Hardware Accelerator in Data Centers}
+          {Work on a research project of RDMA and computation offloading using FPGA-based SmartNIC}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {National University of Singapore - Research Intern}
+      {Singapore}
+      {Systems \& Network Security Lab (Advisor: \href{https://netsp.kaist.ac.kr/min-suk-kang}{Min Suk Kang})}
+      {September 2018 - February 2019}
+      \resumeItemListStart
+        \resumeItem{Blockchain Systems \& Network Security}
+          {Investigate partitioning attacks against Blockchain network.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {Yonsei University - Research Intern}
+      {Seoul, Korea}
+      {Dependable Computing Lab (Advisor: \href{http://dclab.yonsei.ac.kr/professor/}{Kyoungwoo Lee})}
+      {February 2017 - May 2018}
+      \resumeItemListStart
+        \resumeItem{Sensing Systems using Deep Learning}
+          {Design a realtime stress recognition system using deep learning.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Metlife - Summer Intern}
+      {Seoul, Korea}
+      {IT Planning Team}
+      {July 2018 - August 2018}
+      % \resumeItemListStart
+        % \resumeItem{OpenAPI System Introduction}
+        %   {Surveying secure authorization systems for OpenAPI}
+        % \resumeItem{IT Trend Technology Research}
+        %   {Surveying security issues in Blockchain systems}
+      % \resumeItemListEnd
+    \resumeSubHeadingListEnd 
+
+% %-----------Conference Publications-----------------
+\section{Publications}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://apsys2025.github.io/accepted_papers.html}{[APSYS ‘25] ML-native Dataplane Operating Systems}}
+    
+      {\textbf{Inho Choi}, Anand Bonde, Jing Liu, Joshua Fried, Irene Zhang, Jialin Li.} 
+      
+      {16th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys 2025)}
+    \resumeSubItem{\href{https://arxiv.org/pdf/2312.06207}{[ArXiv] A Primer on RecoNIC: RDMA-enabled Compute Offloading on SmartNIC}}
+    
+      {Guanwen Zhong, Aditya Kolekar, Burin Amornpaisannon, \textbf{Inho Choi}, Haris Javaid, Mario Baldi.} 
+      
+      {ArXiv, Dec, 2023}
+    
+    
+    \resumeSubItem{\href{https://dl.acm.org/doi/pdf/10.1145/3609510.3609813}{[APSYS ‘23] Capybara: $\mu$Second-scale live TCP migration}}
+    
+      {\textbf{Inho Choi}, Nimish Wadekar, Raj Joshi, Joshua Fried, Dan R. K. Ports, Irene Zhang, and Jialin Li.} 
+      
+      {14th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys 2023)}
+
+    \resumeSubItem{\href{https://dl.acm.org/doi/pdf/10.1145/3603269.3604849}{[SIGCOMM '23] Network Load Balancing with In-network Reordering Support for RDMA}}
+    
+      {Cha Hwan Song, Xin Zhe Khooi, Raj Joshi, \textbf{Inho Choi}, Jialin Li, and Mun Choon Chan.} 
+      
+      {Proceedings of the 2023 ACM SIGCOMM Conference}
+    
+    
+    \resumeSubItem{\href{https://www.usenix.org/conference/nsdi23/presentation/choi}{[NSDI '23] Hydra: Serialization-Free Network Ordering for Strongly Consistent Distributed Applications}}
+    
+      {\textbf{Inho Choi}, Ellis Michael, Yunfan Li, Dan Ports, and Jialin Li.} 
+      
+      {Proceedings of the 20th USENIX Conference on Network Systems Design and Implementation}
+      
+    \resumeSubItem{\href{https://ihchoi12.github.io/assets/tran2020stealthier.pdf}{[S\&P (Oakland) '20] A Stealthier Partitioning Attack against Bitcoin Peer-to-Peer Network}}
+    
+      {Muoi Tran, \textbf{Inho Choi}, Gi Jun Moon, Viet-Anh Vu, and Min Suk Kang.}
+      
+      {In Proceedings of IEEE Symposium on Security and Privacy, May 2020.}
+  
+    \resumeSubItem{\href{https://dl.acm.org/citation.cfm?id=3125616}{[UbiComp Workshop '17] Multimodal Data Collection Framework for Mental Stress Monitoring}}
+    
+      {Saewon Kye, Junhyung Moon, Juneil Lee, \textbf{Inho Choi}, Dongmi Cheon, Kyoungwoo Lee.}  
+      
+      {In Proceedings of the 2017 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2017 ACM International Symposium on Wearable Computers. (Workshop Paper)}
+      
+     
+      
+  \resumeSubHeadingListEnd
+
+
+% %-----------AWARDS-----------------
+\section{Awards}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Research Incentive Award}{October 2023}
+      {National University of Singapore}{}
+    \resumeSubheading
+      {NUS Research Scholarship}{August 2019 -- July 2023}
+      {National University of Singapore}{}
+    \resumeSubheading
+      {Research Achievement Award}{January 2023}
+      {National University of Singapore}{}
+    \resumeSubheading
+      {Honors - 1st Semester, 2018}{August 2018}
+      {Yonsei University}{}
+      
+   
+  \resumeSubHeadingListEnd
+% \clearpage
+
+% %-----------TEACHING-----------------
+\section{Teaching Experiences}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Teaching Assistant for Distributed Systems (CS5223)}{Semester 1, 2022}
+      {National University of Singapore}{}
+    \resumeSubheading
+      {Teaching Assistant for Introduction to Operating Systems (CS2106)}{Semester 1, 2021}
+      {National University of Singapore}{}
+    \resumeSubheading
+      {Teaching Assistant for Distributed Systems (CS5223)}{Semester 2, 2020}
+      {National University of Singapore}{}
+    \resumeSubheading
+      {Teaching Assistant for Programming Methodology (CS1010E)}{Semester 1, 2020}
+      {National University of Singapore}{}
+    \resumeSubheading
+      {Teaching Assistant for Cryptography Theory and Practice (CS4236)}{Semester 1, 2019}
+      {National University of Singapore}{}
+  \resumeSubHeadingListEnd
+
+\section{Mentoring Experiences}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Yiyang Liu — NUS, Singapore}{2024}
+      {Master's Thesis: Enhancing Distributed Systems with Hydra: A Software Solution for Scalable Network Ordering}{}
+  \resumeSubHeadingListEnd
+
+\section{Services}
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    $\bullet$ \hspace{0.5em} \textbf{Reviewer} & ToN '25 \\
+    
+    $\bullet$ \hspace{0.5em} \textbf{Shadow PC Reviewer} & EuroSys '26, EuroSys '25 \\
+    
+    $\bullet$ \hspace{0.5em} \textbf{Student Volunteer} & SOSP '21 \\
+  \end{tabular*}
+
+\section{Invited Talks}
+\resumeSubHeadingListStart
+    \resumeSubItem{Co-Designing Systems for Microsecond-Scale Consistent Tail Latency in Datacenters}
+    
+      { \ } 
+      
+      {Yonsei University (2025), Seoul National University (2025)}
+
+\resumeSubHeadingListEnd
+
+
+  
+ %--------Volunteer and Leadership experience------------
+% \includepdf[page=1-]{research_proposal.pdf}
+% \includepdf[page=1-]{transcript.pdf} 
+% \section{Volunteer and Leadership experience}
+
+
+
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {Club President}{Jan 2013 - Jan 2014}
+%       {CORAS : University United Culture and Volunteer Activity Club}{}
+   
+  
+%     \resumeSubheading
+%       {Mathmatics Instructor}{Aug 2013 - Dec 2013}
+%       {Edushare Korea - Non Profit Educational Voluntary Organization}{}
+   
+  
+%     \resumeSubheading
+%       {Volunteer Activity}{Aug 2013}
+%       {Music for One Foundation : Overseas Voluntary Activity to Cambodia}{}
+   
+%   \resumeSubHeadingListEnd
+
+% \section{Skills}
+%   \textbf{Coding Languages}
+%   \resumeSubHeadingListStart
+%     \resumeSubItem{Advanced}{C++, C, PyThon, Java, P4}
+%     \resumeSubItem{Intermediate}{Rust}
+%   \resumeSubHeadingListEnd
+  % \vspace{10pt}
+  % \textbf{Languages} \vspace{-7pt}\newline
+  
+  % Korean (Native), English (Proficient)
+\end{document}
+

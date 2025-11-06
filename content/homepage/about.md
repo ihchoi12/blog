@@ -16,9 +16,9 @@ avatar = "images/inho.jpg"
   url = "mailto:inhochoi@comp.nus.edu.sg"
 
 [[social]]
-  icon = "github"
+  icon = "linkedin"
   iconPack = "fab"
-  url = "https://example.com/"
+  url = "https://www.linkedin.com/in/inho-choi-5a8845172/"
 
 [[social]]
   icon = "cv"
@@ -28,7 +28,7 @@ avatar = "images/inho.jpg"
 [[social]]
   icon = "google-scholar"
   iconPack = "ai"
-  url = "https://example.com/"
+  url = "https://scholar.google.com/citations?user=ktzRPLoAAAAJ&hl=en"
 
 [widget]
   handler = "about"
