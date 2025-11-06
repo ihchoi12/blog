@@ -3,8 +3,9 @@ title = "Inho Choi"
 weight = 1
 draft = false
 
-role = "Ph.D. Student" 
+role = "Ph.D. Student"
 avatar = "images/inho.jpg"
+email = "inhochoi@comp.nus.edu.sg"
 
 [organization]
   name = "National University of Singpoare, School of Computing"
@@ -55,9 +56,9 @@ avatar = "images/inho.jpg"
     # Options: fixed, local, scroll.
     attachment = ""
 +++
-## 
+##
 <p style="font-size:20px">
-I am a Ph.D. student in Computer Science at National University of Singapore, 
+I am a Ph.D. student in Computer Science at National University of Singapore,
 advised by <a href="https://www.comp.nus.edu.sg/~lijl/">Jialin Li</a>.
 My research lies at the intersection of distributed systems, datacenter networks, dataplane operating systems, and machine learning for systems.
 </p>
@@ -109,6 +110,8 @@ My research lies at the intersection of distributed systems, datacenter networks
   </div>
 
 <br>
+
+<div id="publications"></div>
 
 ## Publications
   <b>[APSYS '25]
@@ -168,6 +171,8 @@ My research lies at the intersection of distributed systems, datacenter networks
   [<a href="https://ubicomp-mental-health.github.io/papers/2017/stress-kye.pdf"> PDF </a>]
 
 <br>
+
+<div id="experiences"></div>
 
 ## Experiences
   <div>
