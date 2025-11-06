@@ -80,6 +80,7 @@ My research lies at the intersection of distributed systems, datacenter networks
       <p style="float: left; width: 20%; height: 50px; text-align: right;">
         Aug 2019 — Present
       </p>
+      <div style="clear: both;"></div>
       <!--  -->
       <p style="float: left; width: 80%; text-align: left;">
         <a href="https://www.yonsei.ac.kr/en_sc/index.jsp" class="font-bold">Yonsei University</a>
@@ -93,6 +94,7 @@ My research lies at the intersection of distributed systems, datacenter networks
       <p style="float: left; width: 20%; height: 50px; text-align: right;">
         Mar 2012 — Aug 2019
       </p>
+      <div style="clear: both;"></div>
       <!--  -->
       <p style="float: left; width: 80%; text-align: left;">
         <a href="https://www.it.uu.se/" class="font-bold">Uppsala University</a>
@@ -188,6 +190,7 @@ My research lies at the intersection of distributed systems, datacenter networks
     <p style="float: left; width: 20%; height: 50px; text-align: right;">
       June 2025 — Sep 2025
     </p>
+    <div style="clear: both;"></div>
     <!--  -->
     <p style="float: left; width: 50%; text-align: left;">
       <a class="font-bold">Microsoft Research</a> - PhD Research Intern
@@ -201,6 +204,7 @@ My research lies at the intersection of distributed systems, datacenter networks
     <p style="float: left; width: 20%; height: 50px; text-align: right;">
       June 2024 — Aug 2024
     </p>
+    <div style="clear: both;"></div>
     <!--  -->
     <p style="float: left; width: 50%; text-align: left;">
       <a class="font-bold">AMD </a> - PhD Research Intern
@@ -214,6 +218,7 @@ My research lies at the intersection of distributed systems, datacenter networks
     <p style="float: left; width: 20%; height: 50px; text-align: right;">
       May 2023 — Aug 2023
     </p>
+    <div style="clear: both;"></div>
     <!--  -->
     <p style="float: left; width: 50%; text-align: left;">
       <a class="font-bold">National University of Singapore</a> - Research Intern
@@ -227,9 +232,10 @@ My research lies at the intersection of distributed systems, datacenter networks
     <p style="float: left; width: 20%; height: 50px; text-align: right;">
       Sep 2018 — Feb 2019
     </p>
+    <div style="clear: both;"></div>
     <!--  -->
     <p style="float: left; width: 80%; text-align: left;">
-      <a class="font-bold">Yonsei University</a> - Research Intern 
+      <a class="font-bold">Yonsei University</a> - Research Intern
     </p>
     <p style="float: left; width: 20%; text-align: right;">
       Seoul, Korea
@@ -240,6 +246,7 @@ My research lies at the intersection of distributed systems, datacenter networks
     <p style="float: left; width: 20%; height: 50px; text-align: right;">
       Feb 2017 — May 2018
     </p>
+    <div style="clear: both;"></div>
     <!--  -->
     <p style="float: left; width: 50%; text-align: left;">
       <a class="font-bold">Metlife</a> - Summer Intern
@@ -270,6 +277,7 @@ My research lies at the intersection of distributed systems, datacenter networks
     <p style="float: left; width: 100%; height: 50px; text-align: right;">
       Oct 2023
     </p>
+    <div style="clear: both;"></div>
     <p style="float: left; width: 60%; text-align: left;">
       <a href="https://www.comp.nus.edu.sg/programmes/pg/awards/deans/" class="font-bold">Research Achievement Award</a>
     </p>
@@ -279,6 +287,7 @@ My research lies at the intersection of distributed systems, datacenter networks
     <p style="float: left; width: 100%; height: 50px; text-align: right;">
       Jan 2023
     </p>
+    <div style="clear: both;"></div>
     <p style="float: left; width: 60%; text-align: left;">
       <a href="https://www.comp.nus.edu.sg/programmes/pg/phdcs/scholarships/#financial" class="font-bold">NUS Research Scholarship</a>
     </p>
@@ -288,6 +297,7 @@ My research lies at the intersection of distributed systems, datacenter networks
     <p style="float: left; width: 100%; height: 50px; text-align: right;">
       Aug 2018 - Present
     </p>
+    <div style="clear: both;"></div>
     <p style="float: left; width: 60%; text-align: left;">
       <a href="https://cs.yonsei.ac.kr:59290/eng/index.php" class="font-bold">Honors - 1st Semester, 2018</a>
     </p>
