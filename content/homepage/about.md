@@ -251,20 +251,6 @@ My research interests lie at the intersection of <strong>distributed systems</st
     </p>
     <div style="clear: both;"></div>
     <!--  -->
-    <p style="float: left; width: 80%; text-align: left;">
-      <a class="font-bold">Yonsei University</a> - Research Intern
-    </p>
-    <p style="float: left; width: 20%; text-align: right;">
-      Seoul, Korea
-    </p>
-    <p style="float: left; width: 80%; text-align: left;">
-      Dependable Computing Lab (Advisor: <a href="http://dclab.yonsei.ac.kr/" >Kyoungwoo Lee</a>)
-    </p>
-    <p style="float: left; width: 20%; text-align: right; margin-bottom: 20px;">
-      Feb 2017 — May 2018
-    </p>
-    <div style="clear: both;"></div>
-    <!--  -->
     <p style="float: left; width: 50%; text-align: left;">
       <a class="font-bold">Metlife</a> - Summer Intern
     </p>
@@ -276,6 +262,20 @@ My research interests lie at the intersection of <strong>distributed systems</st
     </p>
     <p style="float: left; width: 20%; text-align: right; margin-bottom: 20px;">
       July 2018 — Aug 2018
+    </p>
+    <div style="clear: both;"></div>
+    <!--  -->
+    <p style="float: left; width: 80%; text-align: left;">
+      <a class="font-bold">Yonsei University</a> - Research Intern
+    </p>
+    <p style="float: left; width: 20%; text-align: right;">
+      Seoul, Korea
+    </p>
+    <p style="float: left; width: 80%; text-align: left;">
+      Dependable Computing Lab (Advisor: <a href="http://dclab.yonsei.ac.kr/" >Kyoungwoo Lee</a>)
+    </p>
+    <p style="float: left; width: 20%; text-align: right; margin-bottom: 20px;">
+      Feb 2017 — May 2018
     </p>
     <!--  -->
     <div style="clear: both;"></div>
