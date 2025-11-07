@@ -15,7 +15,8 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
- 
+\usepackage{ragged2e}
+
 \usepackage{multicol}
 \setlength{\columnsep}{0.1mm}
 
@@ -196,15 +197,21 @@
     \item\small{
       \textbf{ML-native Dataplane Operating Systems \textcolor{blue}{[Current Main Project]}}
 
+      \begin{justify}
+      \noindent
       We design an ML-native dataplane OS architecture for automatic parameter tuning. Performance tuning remains a persistent challenge in modern datacenters, especially at microsecond scales. We are exploring how machine learning can be natively integrated into the OS dataplane, with case studies showing substantial performance gains through dynamic parameter optimization.
+      \end{justify}
     }
 
       \vspace{5pt}
 
     \item\small{
-      \textbf{Capybara: Dynamic Layer-4 Load Balancing with Microsecond-Scale TCP Migration \textcolor{blue}{[Under Review]}}
+      \textbf{Dynamic Layer-4 Load Balancing with Microsecond-Scale TCP Migration \textcolor{blue}{[Under Review]}}
 
-      Layer-4 load balancers are a popular solution to high tail latencies but perform poorly under unpredictable workloads and traffic bursts because they statically assign connections to servers. We present Capybara, the first dynamic L4 load balancer with $\mu$s-scale stateful connection migration. Capybara leverages two trends -- programmable switches and kernel-bypass -- to efficiently implement TCP migration without packet loss, while maintaining transparency to clients.
+      \begin{justify}
+      \noindent
+      Layer-4 load balancers are a popular solution to high tail latencies but perform poorly under unpredictable workloads and traffic bursts because they statically assign connections to servers. We propose the first dynamic L4 load balancer with $\mu$s-scale stateful connection migration. Our system leverages two trends -- programmable switches and kernel-bypass -- to efficiently implement TCP migration without packet loss, while maintaining transparency to clients.
+      \end{justify}
     }
 
   \resumeSubHeadingListEnd
