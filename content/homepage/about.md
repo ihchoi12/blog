@@ -58,9 +58,12 @@ email = "inhochoi@comp.nus.edu.sg"
 +++
 ##
 <p style="font-size:20px">
-I am a Ph.D. student in Computer Science at National University of Singapore,
-advised by <a href="https://www.comp.nus.edu.sg/~lijl/">Jialin Li</a>.
-My research lies at the intersection of distributed systems, datacenter networks, dataplane operating systems, and machine learning for systems.
+I am a Ph.D. student in Computer Science at the National University of Singapore,
+advised by <a href="https://www.comp.nus.edu.sg/~lijl/">Jialin Li</a>. I also closely collaborate with <a href="https://irenezhang.net/">Irene Zhang</a> and <a href="https://drkp.net/">Dan Ports</a>.
+</p>
+
+<p style="font-size:18px; margin-top: 15px; line-height: 1.6;">
+My research interests lie at the intersection of <strong>distributed systems</strong>, <strong>datacenter networks</strong>, <strong>dataplane operating systems</strong>, and <strong>machine learning for systems</strong>. Currently, I am focusing on designing high-performance systems that leverage programmable hardware and ML-driven optimization to address challenges in modern datacenters.
 </p>
 
 <br>
@@ -133,11 +136,10 @@ My research lies at the intersection of distributed systems, datacenter networks
 
 ## Publications
   <b>[APSYS '25]
-  <a> ML-native Dataplane Operating Systems </a> </b> <br>
+  <a href="https://dl.acm.org/doi/pdf/10.1145/3725783.3764392"> ML-native Dataplane Operating Systems </a> </b> <br>
   <b><u>Inho Choi</u></b>, Anand Bonde, Jing Liu, Joshua Fried, Irene Zhang, Jialin Li. <br>
   16th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys 2025) <br>
-  [To Appear]
-  <br><br>
+  <br>
 
   <b>[ArXiv]
   <a href="https://arxiv.org/pdf/2312.06207"> 
@@ -150,8 +152,7 @@ My research lies at the intersection of distributed systems, datacenter networks
   <a href="https://apsys23.skku.edu/program.html"> Capybara: &mu;Second-scale live TCP migration</a> </b> <br>
   <b><u>Inho Choi</u></b>, Nimish Wadekar, Raj Joshi, Joshua Fried, Dan R. K. Ports, Irene Zhang, Jialin Li. <br>
   14th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys 2023) <br>
-  [<a href="https://dl.acm.org/doi/pdf/10.1145/3609510.3609813"> PDF </a> | 
-  <a href="https://ihchoi12.github.io/assets/capybara-apsys23-FINAL.pptx"> Slide </a>]
+  [<a href="https://dl.acm.org/doi/pdf/10.1145/3609510.3609813"> PDF </a>]
   <br><br>
 
   <b>[SIGCOMM '23]
@@ -343,9 +344,28 @@ My research lies at the intersection of distributed systems, datacenter networks
 
 <ul style="list-style-type: disc;">
   <li>
-    <b>Shadow PC Reviewer</b> — EuroSys '26, EuroSys '25
+    <div style="overflow: hidden;">
+      <span style="float: left;"><b>Shadow PC Reviewer</b></span>
+      <span style="float: right; font-style: italic;">EuroSys '26, EuroSys '25</span>
+    </div>
   </li>
   <li>
-    <b>Student Volunteer</b> — SOSP '21
+    <div style="overflow: hidden;">
+      <span style="float: left;"><b>Student Volunteer</b></span>
+      <span style="float: right; font-style: italic;">SOSP '21</span>
+    </div>
+  </li>
+</ul>
+
+<br>
+
+## Invited Talks
+
+<ul style="list-style-type: disc;">
+  <li>
+    <div style="overflow: hidden;">
+      <span style="float: left; width: 100%;"><b>Co-Designing Systems for Microsecond-Scale Consistent Tail Latency in Datacenters</b></span>
+      <span style="float: right; font-style: italic;">Yonsei University (2025), Seoul National University (2025)</span>
+    </div>
   </li>
 </ul>
