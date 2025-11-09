@@ -107,6 +107,90 @@
       {Exchange Student in Information Technology; \cmt{Grade: 4.5/5}}{August 2017 -- January 2018}
   \resumeSubHeadingListEnd
 
+%----------- Research EXPERIENCE-----------------
+\section{Experiences}
+  % \resumeSubHeadingListStart
+  % \resumeSubheading
+  %     {Ph.D. Candidate}{Advisor: Assistant Professor. Jialin Li}
+  %     {National University of Singapore, School of Computing}{August 2019 - Present}
+  %     \resumeItemListStart
+  %       \resumeItem{Datacenter Networks \& Distributed Systems}
+  %         {Co-designing distributed systems with data center networks and specialized hardware for higher efficient and reliability.}
+        
+  %     \resumeItemListEnd
+  % \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {Microsoft Research - PhD Research Intern}
+      {Redmond, WA, USA}
+      {Systems Research Group (Mentor: \href{https://irenezhang.net/}{Irene Zhang})}
+      {June 2025 — September 2025}
+
+      \small{Conducted research on ML-native dataplane OS architecture for automatic parameter tuning to address performance optimization challenges in modern datacenters at microsecond scales. Designed system architecture integrating machine learning natively into the OS dataplane for dynamic parameter optimization. Developed and evaluated the approach to demonstrate benefits of automated tuning across diverse workloads. Published initial findings at APSys '25, with full-system development currently in progress.}
+
+      \vspace{5pt}
+  \resumeSubHeadingListEnd
+  
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {Microsoft Research - PhD Research Intern}
+      {Redmond, WA, USA}
+      {Systems Research Group (Mentor: \href{https://drkp.net/}{Dan Ports})}
+      {June 2024 — August 2024}
+
+      \small{Conducted research on dynamic Layer-4 load balancing to address tail latency issues in unpredictable workloads and traffic bursts caused by static TCP connection assignment between client and server. Designed and implemented microsecond-scale TCP connection migration system leveraging programmable switches and kernel-bypass technologies, achieving packet-loss-free migration while maintaining client transparency. Published initial findings at APSys '23, with full paper currently under submission.}
+
+      \vspace{5pt}
+  \resumeSubHeadingListEnd
+  
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {AMD - PhD Research Intern}
+      {Singapore}
+      {Xilinx Lab - FPGA / System Design (Mentor: \href{https://www.linkedin.com/in/guanwen-henry-zhong-16817831/?originalSubdomain=sg}{Guanwen Zhong})}
+      {May 2023 - August 2023}
+
+      \small{Contributed to research on hardware accelerator architectures for datacenter networks, specializing in RDMA protocol optimization and computation offloading on FPGA-based SmartNIC platforms. Participated in developing offloading techniques to enhance network stack performance while minimizing host CPU overhead. Participated in implementing and validating solutions through FPGA prototype and performance evaluation, with findings published on ArXiv.}
+
+      \vspace{5pt}
+  \resumeSubHeadingListEnd
+  
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {National University of Singapore - Research Intern}
+      {Singapore}
+      {Systems \& Network Security Lab (Advisor: \href{https://netsp.kaist.ac.kr/min-suk-kang}{Min Suk Kang})}
+      {September 2018 - February 2019}
+
+      \small{Contributed to research on network-level security vulnerabilities in Bitcoin's peer-to-peer network, analyzing how adversarial autonomous systems can execute stealth attacks without routing manipulations. Participated in developing and evaluating the EREBUS attack, demonstrating partition vulnerabilities in Bitcoin nodes and defense mechanisms through protocol modifications. Co-authored paper published at IEEE S\&P '20, advancing cryptocurrency network security.}
+
+      \vspace{5pt}
+  \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Metlife - Summer Intern}
+      {Seoul, Korea}
+      {IT Planning Team}
+      {July 2018 - August 2018}
+
+      \small{Analyzed IT infrastructure and database server architecture at MetLife Korea, investigating OAuth 2.0 protocol adoption for security enhancement. Presented findings through internal seminar.}
+
+      \vspace{5pt}
+    \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {Yonsei University - Research Intern}
+      {Seoul, Korea}
+      {Dependable Computing Lab (Advisor: \href{http://dclab.yonsei.ac.kr/professor/}{Kyoungwoo Lee})}
+      {February 2017 - May 2018}
+
+      \small{Contributed to development of a multimodal stress monitoring framework for analyzing people's physiological and behavioral reactions to stressors. Participated in designing and conducting experiments and implementing real-time signal processing framework. Co-authored paper published at UbiComp Workshop '17, presenting the framework and experimental findings.}
+
+      \vspace{5pt}
+  \resumeSubHeadingListEnd
+
 % %-----------Work in Progress-----------------
 \section{Work in Progress \normalfont\small\textit{(projects that I'm currently leading)}}
   \resumeSubHeadingListStart
@@ -182,132 +266,6 @@
       
   \resumeSubHeadingListEnd
 
-
-%----------- Research EXPERIENCE-----------------
-\section{Experiences}
-  % \resumeSubHeadingListStart
-  % \resumeSubheading
-  %     {Ph.D. Candidate}{Advisor: Assistant Professor. Jialin Li}
-  %     {National University of Singapore, School of Computing}{August 2019 - Present}
-  %     \resumeItemListStart
-  %       \resumeItem{Datacenter Networks \& Distributed Systems}
-  %         {Co-designing distributed systems with data center networks and specialized hardware for higher efficient and reliability.}
-
-  %     \resumeItemListEnd
-  % \resumeSubHeadingListEnd
-  \resumeSubHeadingListStart
-  \resumeSubheading
-      {Microsoft Research - PhD Research Intern}
-      {Redmond, WA, USA}
-      {Systems Research Group (Mentor: \href{https://irenezhang.net/}{Irene Zhang})}
-      {June 2025 — September 2025}
-
-      \vspace{5pt}
-      \hspace{1cm}\begin{minipage}{0.92\textwidth}
-      \small
-      \begin{justify}
-      \noindent
-      Conducted research on ML-native dataplane OS architecture for automatic parameter tuning to address performance optimization challenges in modern datacenters at microsecond scales. Designed system architecture integrating machine learning natively into the OS dataplane for dynamic parameter optimization. Developed and evaluated the approach to demonstrate benefits of automated tuning across diverse workloads. Published initial findings at APSys '25, with full-system development currently in progress.
-      \end{justify}
-      \end{minipage}
-
-      \vspace{8pt}
-  \resumeSubHeadingListEnd
-
-  \resumeSubHeadingListStart
-  \resumeSubheading
-      {Microsoft Research - PhD Research Intern}
-      {Redmond, WA, USA}
-      {Systems Research Group (Mentor: \href{https://drkp.net/}{Dan Ports})}
-      {June 2024 — August 2024}
-
-      \vspace{5pt}
-      \hspace{1cm}\begin{minipage}{0.92\textwidth}
-      \small
-      \begin{justify}
-      \noindent
-      Conducted research on dynamic Layer-4 load balancing to address tail latency issues in unpredictable workloads and traffic bursts caused by static TCP connection assignment between client and server. Designed and implemented microsecond-scale TCP connection migration system leveraging programmable switches and kernel-bypass technologies, achieving packet-loss-free migration while maintaining client transparency. Published initial findings at APSys '23, with full paper currently under submission.
-      \end{justify}
-      \end{minipage}
-
-      \vspace{8pt}
-  \resumeSubHeadingListEnd
-
-  \resumeSubHeadingListStart
-  \resumeSubheading
-      {AMD - PhD Research Intern}
-      {Singapore}
-      {Xilinx Lab - FPGA / System Design (Mentor: \href{https://www.linkedin.com/in/guanwen-henry-zhong-16817831/?originalSubdomain=sg}{Guanwen Zhong})}
-      {May 2023 - August 2023}
-
-      \vspace{5pt}
-      \hspace{1cm}\begin{minipage}{0.92\textwidth}
-      \small
-      \begin{justify}
-      \noindent
-      Contributed to research on hardware accelerator architectures for datacenter networks, specializing in RDMA protocol optimization and computation offloading on FPGA-based SmartNIC platforms. Participated in developing offloading techniques to enhance network stack performance while minimizing host CPU overhead. Participated in implementing and validating solutions through FPGA prototype and performance evaluation, with findings published on ArXiv.
-      \end{justify}
-      \end{minipage}
-
-      \vspace{8pt}
-  \resumeSubHeadingListEnd
-
-  \resumeSubHeadingListStart
-  \resumeSubheading
-      {National University of Singapore - Research Intern}
-      {Singapore}
-      {Systems \& Network Security Lab (Advisor: \href{https://netsp.kaist.ac.kr/min-suk-kang}{Min Suk Kang})}
-      {September 2018 - February 2019}
-
-      \vspace{5pt}
-      \hspace{1cm}\begin{minipage}{0.92\textwidth}
-      \small
-      \begin{justify}
-      \noindent
-      Contributed to research on network-level security vulnerabilities in Bitcoin's peer-to-peer network, analyzing how adversarial autonomous systems can execute stealth attacks without routing manipulations. Participated in developing and evaluating the EREBUS attack, demonstrating partition vulnerabilities in Bitcoin nodes and defense mechanisms through protocol modifications. Co-authored paper published at IEEE S\&P '20, advancing cryptocurrency network security.
-      \end{justify}
-      \end{minipage}
-
-      \vspace{8pt}
-  \resumeSubHeadingListEnd
-
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Metlife - Summer Intern}
-      {Seoul, Korea}
-      {IT Planning Team}
-      {July 2018 - August 2018}
-
-      \vspace{5pt}
-      \hspace{1cm}\begin{minipage}{0.92\textwidth}
-      \small
-      \begin{justify}
-      \noindent
-      Analyzed IT infrastructure and database server architecture at MetLife Korea, investigating OAuth 2.0 protocol adoption for security enhancement. Presented findings through internal seminar.
-      \end{justify}
-      \end{minipage}
-
-      \vspace{8pt}
-    \resumeSubHeadingListEnd
-
-  \resumeSubHeadingListStart
-  \resumeSubheading
-      {Yonsei University - Research Intern}
-      {Seoul, Korea}
-      {Dependable Computing Lab (Advisor: \href{http://dclab.yonsei.ac.kr/professor/}{Kyoungwoo Lee})}
-      {February 2017 - May 2018}
-
-      \vspace{5pt}
-      \hspace{1cm}\begin{minipage}{0.92\textwidth}
-      \small
-      \begin{justify}
-      \noindent
-      Contributed to development of a multimodal stress monitoring framework for analyzing people's physiological and behavioral reactions to stressors. Participated in designing and conducting experiments and implementing real-time signal processing framework. Co-authored paper published at UbiComp Workshop '17, presenting the framework and experimental findings.
-      \end{justify}
-      \end{minipage}
-
-      \vspace{8pt}
-  \resumeSubHeadingListEnd
 
 % %-----------AWARDS-----------------
 \section{Awards}
