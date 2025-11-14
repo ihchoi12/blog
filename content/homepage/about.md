@@ -59,7 +59,7 @@ email = "inhochoi@comp.nus.edu.sg"
 ##
 
 <p style="font-size:18px; color: #0d15f3d8; background-color: #bdbfc1ff; padding: 15px; border-radius: 8px; border-left: 4px solid #0D8BF3; margin-bottom: 20px; text-align: justify;">
-<strong>📢 I am graduating soon this year (2025) and currently seeking research positions in both industry and postdoc. I'd be happy to connect and chat!</strong>
+<strong>📢 I am graduating soon this year (2025) and currently on job market. I'd be happy to connect and chat!</strong>
 </p>
 
 <p style="font-size:20px; text-align: justify;">
