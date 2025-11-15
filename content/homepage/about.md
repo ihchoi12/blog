@@ -127,7 +127,7 @@ My research interests lie at the intersection of <strong>distributed systems</st
 
   <b>- ML-native Dataplane Operating Systems<span style="color: rgba(13, 139, 243, 1);"> [Current Main Project]</span></b>
   <p style="text-align: justify; line-height: 1.6;">
-  We design an ML-native dataplane OS architecture for automatic parameter tuning. Performance tuning remains a persistent challenge in modern datacenters, especially at microsecond scales. We are exploring how machine learning can be natively integrated into the OS dataplane, with case studies showing substantial performance gains through dynamic parameter optimization.
+  We design an ML-native dataplane OS architecture for automatic parameter tuning. Performance tuning remains a persistent challenge in modern datacenters, especially at microsecond scales. We are exploring how machine learning can be natively integrated into the OS dataplane, with case studies showing substantial performance gains through dynamic parameter optimization. Through this work, I actively perform comprehensive full-stack performance analysis and optimization, spanning from hardware-level signals (PCIe, memory access patterns, cache efficiency, DDIO) and inter-device data exchange to device drivers, OS components, and application layers.
   </p>
   <br>
 
