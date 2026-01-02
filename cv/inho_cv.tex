@@ -8,6 +8,15 @@
 \usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[pdftex]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue
+}
+% Custom command for bold blue links (for titles)
+\newcommand{\bfhref}[2]{\href{#1}{\textbf{\textcolor{blue}{#2}}}}
+% Custom command for blue links without bold (for descriptions)
+\newcommand{\bluehref}[2]{\href{#1}{\textcolor{blue}{#2}}}
 \usepackage{fancyhdr}
 \usepackage{amsmath}
 \usepackage[final]{pdfpages}
@@ -81,7 +90,7 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{{\Huge Inho Choi}} & Email : \href{mailto:inhochoi@comp.nus.edu.sg}{inhochoi@comp.nus.edu.sg}\\
-  Ph.D. Candidate \cmt{(Research Interest: Distributed Systems)} & Website: \href{https://ihchoi12.github.io/}{https://ihchoi12.github.io/} \\
+  Ph.D. in Computer Science \cmt{(Research Interest: Distributed Systems)} & Website: \href{https://ihchoi12.github.io/}{https://ihchoi12.github.io/} \\
   National University of Singapore & Mobile : +65-89298595 (Singapore)\\
   & +82-1071547231 (Korea) \\ %& Mail : COM3\\
   
@@ -94,7 +103,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {National University of Singapore}{Singapore}
-      {Ph.D. Candidate in School of Computing (Advisor: \href{https://www.comp.nus.edu.sg/~lijl/}{Jialin Li});}{August 2019 -- December 2025 (Expected)}
+      {Ph.D. in Computer Science (Advisor: \href{https://www.comp.nus.edu.sg/~lijl/}{Jialin Li});}{August 2019 -- January 2026}
   \resumeSubHeadingListEnd
   \resumeSubHeadingListStart
     \resumeSubheading
@@ -108,25 +117,40 @@
   \resumeSubHeadingListEnd
 
 % %-----------Work in Progress-----------------
-\section{Work in Progress \normalfont\small\textit{(projects that I'm currently leading)}}
+\section{Work in Progress}
   \resumeSubHeadingListStart
     \item\small{
-      \textbf{ML-native Dataplane Operating Systems \textcolor{blue}{[Current Main Project]}}
+      \textbf{Dataplane OS Performance Optimization} \textbf{[Current Main Project]}
 
       \begin{justify}
       \noindent
-      We design an ML-native dataplane OS architecture for automatic parameter tuning. Performance tuning remains a persistent challenge in modern datacenters, especially at microsecond scales. We are exploring how machine learning can be natively integrated into the OS dataplane, with case studies showing substantial performance gains through dynamic parameter optimization. Through this work, I actively perform comprehensive full-stack performance analysis and optimization, spanning from hardware-level signals (PCIe, memory access patterns, cache efficiency, DDIO) and inter-device data exchange to device drivers, OS components, and application layers.
+      Performance tuning remains a persistent challenge in modern datacenters, especially at microsecond scales. We are exploring new dataplane OS optimization techniques with two complementary directions:
+
+      \textbf{(1) ML-driven optimization.} We natively integrate machine learning into the OS dataplane to support dynamic parameter optimization at runtime [\bluehref{https://dl.acm.org/doi/pdf/10.1145/3725783.3764392}{Details}].
+
+      \textbf{(2) Intra-host network-aware optimization.} I am conducting comprehensive analysis on intra-host network spanning across hardware-level signals (PCIe, memory access patterns, cache efficiency, DDIO), inter-device data exchange, device drivers and OS dataplane. We aim to extend this to GPU hosts, where PCIe/NVLink interconnects and GPU memory hierarchies introduce additional complexity critical for ML workloads [\bluehref{https://ihchoi12.github.io/assets/intra-host-net.pdf}{Details}].
       \end{justify}
     }
 
       \vspace{5pt}
 
     \item\small{
-      \textbf{Dynamic Layer-4 Load Balancing with Microsecond-Scale TCP Migration \textcolor{blue}{[Under Review]}}
+      \textbf{Dynamic Layer-4 Load Balancing with Microsecond-Scale TCP Migration} \textbf{[Full Paper Under Review]}
 
       \begin{justify}
       \noindent
       Layer-4 load balancers are a popular solution to high tail latencies but perform poorly under unpredictable workloads and traffic bursts because they statically assign connections to servers. We propose the first dynamic L4 load balancer with $\mu$s-scale stateful connection migration. Our system leverages two trends -- programmable switches and kernel-bypass -- to efficiently implement TCP migration without packet loss, while maintaining transparency to clients.
+      \end{justify}
+    }
+
+      \vspace{5pt}
+
+    \item\small{
+      \textbf{Systems for ML} \textbf{[Early Stage]}
+
+      \begin{justify}
+      \noindent
+      I am also interested in Systems for ML and currently exploring potential ideas in this space [\bluehref{https://ihchoi12.github.io/assets/moe-disaggregation.html}{Example}].
       \end{justify}
     }
 
@@ -207,7 +231,7 @@
       \small
       \begin{justify}
       \noindent
-      Conducted research on ML-native dataplane OS architecture for automatic parameter tuning to address performance optimization challenges in modern datacenters at microsecond scales. Designed system architecture integrating machine learning natively into the OS dataplane for dynamic parameter optimization. Developed and evaluated the approach to demonstrate benefits of automated tuning across diverse workloads. Published initial findings at APSys '25, with full-system development currently in progress.
+      Conducted research on ML-native dataplane OS architecture for automatic parameter tuning to address performance optimization challenges in modern datacenters at microsecond scales. Designed system architecture integrating machine learning natively into the OS dataplane for dynamic parameter optimization. Developed and evaluated the approach to demonstrate benefits of automated tuning across diverse workloads. Published initial findings at \bluehref{https://dl.acm.org/doi/pdf/10.1145/3725783.3764392}{APSys '25}, with full-system development currently in progress.
       \end{justify}
       \end{minipage}
 
@@ -226,7 +250,7 @@
       \small
       \begin{justify}
       \noindent
-      Conducted research on dynamic Layer-4 load balancing to address tail latency issues in unpredictable workloads and traffic bursts caused by static TCP connection assignment between client and server. Designed and implemented microsecond-scale TCP connection migration system leveraging programmable switches and kernel-bypass technologies, achieving packet-loss-free migration while maintaining client transparency. Published initial findings at APSys '23, with full paper currently under submission.
+      Conducted research on dynamic Layer-4 load balancing to address tail latency issues in unpredictable workloads and traffic bursts caused by static TCP connection assignment between client and server. Designed and implemented microsecond-scale TCP connection migration system leveraging programmable switches and kernel-bypass technologies, achieving packet-loss-free migration while maintaining client transparency. Published initial findings at \bluehref{https://dl.acm.org/doi/pdf/10.1145/3609510.3609813}{APSys '23}, with full paper currently under submission.
       \end{justify}
       \end{minipage}
 
@@ -245,7 +269,7 @@
       \small
       \begin{justify}
       \noindent
-      Contributed to research on hardware accelerator architectures for datacenter networks, specializing in RDMA protocol optimization and computation offloading on FPGA-based SmartNIC platforms. Participated in developing offloading techniques to enhance network stack performance while minimizing host CPU overhead. Participated in implementing and validating solutions through FPGA prototype and performance evaluation, with findings published on ArXiv.
+      Contributed to research on hardware accelerator architectures for datacenter networks, specializing in RDMA protocol optimization and computation offloading on FPGA-based SmartNIC platforms. Participated in developing offloading techniques to enhance network stack performance while minimizing host CPU overhead. Participated in implementing and validating solutions through FPGA prototype and performance evaluation, with findings published on \bluehref{https://arxiv.org/pdf/2312.06207}{ArXiv}.
       \end{justify}
       \end{minipage}
 
@@ -264,7 +288,7 @@
       \small
       \begin{justify}
       \noindent
-      Contributed to research on network-level security vulnerabilities in Bitcoin's peer-to-peer network, analyzing how adversarial autonomous systems can execute stealth attacks without routing manipulations. Participated in developing and evaluating the EREBUS attack, demonstrating partition vulnerabilities in Bitcoin nodes and defense mechanisms through protocol modifications. Co-authored paper published at IEEE S\&P '20, advancing cryptocurrency network security.
+      Contributed to research on network-level security vulnerabilities in Bitcoin's peer-to-peer network, analyzing how adversarial autonomous systems can execute stealth attacks without routing manipulations. Participated in developing and evaluating the EREBUS attack, demonstrating partition vulnerabilities in Bitcoin nodes and defense mechanisms through protocol modifications. Co-authored paper published at \bluehref{https://ihchoi12.github.io/assets/tran2020stealthier.pdf}{IEEE S\&P '20}, advancing cryptocurrency network security.
       \end{justify}
       \end{minipage}
 
@@ -302,7 +326,7 @@
       \small
       \begin{justify}
       \noindent
-      Contributed to development of a multimodal stress monitoring framework for analyzing people's physiological and behavioral reactions to stressors. Participated in designing and conducting experiments and implementing real-time signal processing framework. Co-authored paper published at UbiComp Workshop '17, presenting the framework and experimental findings.
+      Contributed to development of a multimodal stress monitoring framework for analyzing people's physiological and behavioral reactions to stressors. Participated in designing and conducting experiments and implementing real-time signal processing framework. Co-authored paper published at \bluehref{https://ubicomp-mental-health.github.io/papers/2017/stress-kye.pdf}{UbiComp Workshop '17}, presenting the framework and experimental findings.
       \end{justify}
       \end{minipage}
 
