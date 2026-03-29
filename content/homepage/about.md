@@ -3,9 +3,9 @@ title = "Inho Choi"
 weight = 1
 draft = false
 
-role = "Ph.D. Student"
+role = "Postdoctoral Research Fellow"
 avatar = "images/inho.jpg"
-email = "inhochoi@comp.nus.edu.sg"
+email = "inho.choi.12@gmail.com"
 
 [organization]
   name = "National University of Singpoare, School of Computing"
@@ -14,7 +14,7 @@ email = "inhochoi@comp.nus.edu.sg"
 [[social]]
   icon = "envelope"
   iconPack = "fas"
-  url = "mailto:inhochoi@comp.nus.edu.sg"
+  url = "mailto:inho.choi.12@gmail.com"
 
 [[social]]
   icon = "linkedin"
@@ -59,12 +59,12 @@ email = "inhochoi@comp.nus.edu.sg"
 ##
 
 <p style="font-size:18px; color: #0d15f3d8; background-color: #bdbfc1ff; padding: 15px; border-radius: 8px; border-left: 4px solid #0D8BF3; margin-bottom: 20px; text-align: justify;">
-<strong>📢 I have successfully defended my thesis and am currently on the job market. I'd be happy to connect!</strong>
+<strong>📢 I am currently on the job market. I'd be happy to connect!</strong>
 </p>
 
 <p style="font-size:20px; text-align: justify;">
-I am a Ph.D. student in Computer Science at the National University of Singapore,
-advised by <a href="https://www.comp.nus.edu.sg/~lijl/">Jialin Li</a>. I also closely collaborate with <a href="https://irenezhang.net/">Irene Zhang</a> and <a href="https://drkp.net/">Dan Ports</a> at Microsfot Research.
+I am a Postdoctoral Research Fellow at the National University of Singapore,
+working with <a href="https://www.comp.nus.edu.sg/~lijl/">Jialin Li</a>. I also closely collaborate with <a href="https://irenezhang.net/">Irene Zhang</a> and <a href="https://drkp.net/">Dan Ports</a> at Microsfot Research.
 </p>
 
 <p style="font-size:18px; margin-top: 15px; line-height: 1.6; text-align: justify;">
