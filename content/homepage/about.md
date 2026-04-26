@@ -8,7 +8,7 @@ avatar = "images/inho.jpg"
 email = "inho.choi.12@gmail.com"
 
 [organization]
-  name = "National University of Singpoare, School of Computing"
+  name = "National University of Singapore, School of Computing"
   url = "https://www.comp.nus.edu.sg/"
 
 [[social]]
@@ -64,7 +64,7 @@ email = "inho.choi.12@gmail.com"
 
 <p style="font-size:20px; text-align: justify;">
 I am a Postdoctoral Research Fellow at the National University of Singapore,
-working with <a href="https://www.comp.nus.edu.sg/~lijl/">Jialin Li</a>. I also closely collaborate with <a href="https://irenezhang.net/">Irene Zhang</a> and <a href="https://drkp.net/">Dan Ports</a> at Microsfot Research.
+working with <a href="https://www.comp.nus.edu.sg/~lijl/">Jialin Li</a>. I also closely collaborate with <a href="https://irenezhang.net/">Irene Zhang</a> and <a href="https://drkp.net/">Dan Ports</a> at Microsoft Research.
 </p>
 
 <p style="font-size:18px; margin-top: 15px; line-height: 1.6; text-align: justify;">
@@ -354,7 +354,7 @@ My research interests lie at the intersection of <strong>distributed systems</st
       National University of Singapore
     </p>
     <p style="float: left; width: 100%; text-align: right; margin-bottom: 20px;">
-      Aug 2018 - Present
+      Aug 2019 — Jul 2023
     </p>
     <div style="clear: both;"></div>
     <p style="float: left; width: 60%; text-align: left;">
