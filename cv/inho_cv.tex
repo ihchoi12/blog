@@ -128,7 +128,7 @@
 
       (1) ML-driven optimization. We natively integrate machine learning into the OS dataplane to support dynamic parameter optimization at runtime [\bluehref{https://dl.acm.org/doi/pdf/10.1145/3725783.3764392}{Details}].
 
-      (2) Intra-host network-aware optimization. I am conducting comprehensive analysis on intra-host network spanning across hardware-level signals (PCIe, memory access patterns, cache efficiency, DDIO), inter-device data exchange, device drivers and OS dataplane. We aim to extend this to GPU hosts, where PCIe/NVLink interconnects and GPU memory hierarchies introduce additional complexity critical for ML workloads [\bluehref{https://ihchoi12.github.io/assets/intra-host-net.pdf}{Details}].
+      (2) Intra-host network-aware optimization. I am conducting comprehensive analysis on intra-host network spanning across hardware-level signals (e.g., PCIe, memory access patterns, cache efficiency, DDIO, etc.), inter-device data exchange, device drivers, OS dataplane. We aim to extend this to GPU hosts, where PCIe/NVLink interconnects and GPU memory hierarchies introduce additional complexity critical for ML workloads [\bluehref{https://ihchoi12.github.io/assets/intra-host-net.pdf}{Details}].
       \end{justify}
     }
 
@@ -139,7 +139,7 @@
 
       \begin{justify}
       \noindent
-      Layer-4 load balancers are a popular solution to high tail latencies but perform poorly under unpredictable workloads and traffic bursts because they statically assign connections to servers. We propose the first dynamic L4 load balancer with $\mu$s-scale stateful connection migration. Our system leverages two trends -- programmable switches and kernel-bypass -- to efficiently implement TCP migration without packet loss, while maintaining transparency to clients.
+      Layer-4 load balancers are a popular approach to preventing high tail latencies, but existing solutions have fundamental limitations under unpredictable workloads and traffic bursts due to their static assignment of connections to servers. We propose the first dynamic L4 load balancer with $\mu$s-scale stateful connection migration. Our system leverages two trends -- programmable switches and kernel-bypass -- to efficiently implement TCP migration without packet loss, while maintaining transparency to clients.
       \end{justify}
     }
 
@@ -260,7 +260,7 @@
       \small
       \begin{justify}
       \noindent
-      Conducted research on dynamic Layer-4 load balancing to address tail latency issues in unpredictable workloads and traffic bursts caused by static TCP connection assignment between client and server. Designed and implemented microsecond-scale TCP connection migration system leveraging programmable switches and kernel-bypass technologies, achieving packet-loss-free migration while maintaining client transparency. Published initial findings at \bluehref{https://dl.acm.org/doi/pdf/10.1145/3609510.3609813}{APSys '23}, with full paper currently under submission.
+      Conducted research on dynamic Layer-4 load balancing to address tail latency issues under unpredictable workloads and traffic bursts due to static TCP connection assignment between client and server. Designed and implemented a new dynamic load balancing solution with microsecond-scale TCP connection migration, leveraging programmable switches and kernel-bypass technologies. Published initial findings at \bluehref{https://dl.acm.org/doi/pdf/10.1145/3609510.3609813}{APSys '23}, with full paper currently under submission.
       \end{justify}
       \end{minipage}
 
@@ -279,7 +279,7 @@
       \small
       \begin{justify}
       \noindent
-      Contributed to research on hardware accelerator architectures for datacenter networks, specializing in RDMA protocol optimization and computation offloading on FPGA-based SmartNIC platforms. Participated in developing offloading techniques to enhance network stack performance while minimizing host CPU overhead. Participated in implementing and validating solutions through FPGA prototype and performance evaluation, with findings published on \bluehref{https://arxiv.org/pdf/2312.06207}{ArXiv}.
+      Contributed to research on hardware accelerator architectures for datacenter networks, specializing in RDMA protocol optimization and computation offloading on FPGA-based SmartNIC platforms. Participated in implementing and validating solutions through FPGA prototype and performance evaluation, with findings published on \bluehref{https://arxiv.org/pdf/2312.06207}{ArXiv}.
       \end{justify}
       \end{minipage}
 
@@ -298,7 +298,7 @@
       \small
       \begin{justify}
       \noindent
-      Contributed to research on network-level security vulnerabilities in Bitcoin's peer-to-peer network, analyzing how adversarial autonomous systems can execute stealth attacks without routing manipulations. Participated in developing and evaluating the EREBUS attack, demonstrating partition vulnerabilities in Bitcoin nodes and defense mechanisms through protocol modifications. Co-authored paper published at \bluehref{https://ihchoi12.github.io/assets/tran2020stealthier.pdf}{IEEE S\&P '20}, advancing cryptocurrency network security.
+      Contributed to research on network-level security vulnerabilities in Bitcoin's peer-to-peer network. Participated in demonstrating partitioning attacks on Bitcoin's peer-to-peer network and defense mechanisms. Co-authored a paper published at \bluehref{https://ihchoi12.github.io/assets/tran2020stealthier.pdf}{IEEE S\&P '20}, advancing cryptocurrency network security.
       \end{justify}
       \end{minipage}
 
@@ -336,7 +336,7 @@
       \small
       \begin{justify}
       \noindent
-      Contributed to development of a multimodal stress monitoring framework for analyzing people's physiological and behavioral reactions to stressors. Participated in designing and conducting experiments and implementing real-time signal processing framework. Co-authored paper published at \bluehref{https://ubicomp-mental-health.github.io/papers/2017/stress-kye.pdf}{UbiComp Workshop '17}, presenting the framework and experimental findings.
+      Contributed to development of a multimodal stress monitoring framework for analyzing people's physiological and behavioral reactions to stressors. Participated in designing and conducting experiments and implementing a real-time signal processing framework. Co-authored paper published at \bluehref{https://ubicomp-mental-health.github.io/papers/2017/stress-kye.pdf}{UbiComp Workshop '17}, presenting the framework and experimental findings.
       \end{justify}
       \end{minipage}
 
