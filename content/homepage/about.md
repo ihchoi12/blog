@@ -151,9 +151,9 @@ My research interests lie at the intersection of <strong>distributed systems</st
 
 ## Publications
   <b>[SIGCOMM '26]
-  <a href="https://conferences.sigcomm.org/sigcomm/2026/"> Mako: Dynamic Load Balancing with Microsecond-Scale TCP Migration</a> </b> <br>
+  <a href="https://conferences.sigcomm.org/sigcomm/2026/"> Capybara: Dynamic Load Balancing with Microsecond-Scale TCP Migration</a> </b> <br>
   <b><u>Inho Choi</u></b>, Nimish Wadekar, Guangda Sun, Raj Joshi, Joshua Fried, Omar S. Navarro Leija, Dan Ports, Irene Zhang, Jialin Li. <br>
-  Proceedings of the ACM Special Interest Group on Data Communication (SIGCOMM 2026) <br>
+  Proceedings of the 2026 ACM SIGCOMM Conference (SIGCOMM '26) <br>
   <br>
 
   <b>[APSYS '25]
@@ -185,7 +185,7 @@ My research interests lie at the intersection of <strong>distributed systems</st
   <b>[SIGCOMM '23]
   <a href="https://dl.acm.org/doi/pdf/10.1145/3603269.3604849"> Network Load Balancing with In-network Reordering Support for RDMA</a> </b> <br>
   Cha Hwan Song, Xin Zhe Khooi, Raj Joshi, <b><u>Inho Choi</u></b>, Jialin Li, and Mun Choon Chan. <br>
-  Proceedings of the 2023 ACM SIGCOMM Conference <br>
+  Proceedings of the 2023 ACM SIGCOMM Conference (SIGCOMM '23) <br>
   <details style="margin-top: 5px;">
     <summary style="cursor: pointer; display: inline-block; padding: 3px 10px; background-color: rgba(13, 139, 243, 0.1); border: 1px solid rgba(13, 139, 243, 0.6); border-radius: 4px; color: rgba(13, 139, 243, 1); font-size: 13px; font-weight: bold;">Summary</summary>
     <div style="text-align: justify; line-height: 1.6; margin-top: 10px; padding: 10px 15px; background-color: rgba(13, 139, 243, 0.05); border-left: 3px solid rgba(13, 139, 243, 0.6); font-size: 15px;">
