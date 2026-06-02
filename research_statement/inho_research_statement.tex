@@ -54,13 +54,13 @@
   \begin{center}
     {\Huge\bfseries\color{accent} Research Statement} \\[4pt]
     {\large\itshape\color{darkgray} Cross-Layer Co-Design for Next-Generation Datacenter Systems} \\[8pt]
-    {\Large\bfseries Inho Choi} \\[2pt]
+    {\Large\bfseries Inho Choi}
     % {\normalsize Postdoctoral Research Fellow, National University of Singapore} \\[2pt]
     % {\small \href{mailto:inho.choi.12@gmail.com}{inho.choi.12@gmail.com} \quad $\cdot$ \quad \href{https://ihchoi12.github.io/}{ihchoi12.github.io}}
   \end{center}
-  \vspace{4pt}
+  \vspace{14pt}
   {\color{accent}\hrule height 1.2pt}
-  \vspace{8pt}
+  \vspace{10pt}
 }
 
 % --- Bibliography style ---
@@ -141,7 +141,7 @@ Building on these foundations, I plan to advance ML-native systems along three f
 
 AI workloads such as LLM training and inference, and emerging agentic systems are fundamentally different from the workloads that shaped previous decades of datacenter design. They are often limited by data movement rather than raw compute; they span heterogeneous memory tiers (HBM, DRAM, CXL); they execute across thousands of GPUs coordinated by specialized fabrics (NVLink, InfiniBand); and they expose a level of asymmetry between accelerator compute and host I/O that existing system stacks were not designed to handle. My exposure to this design space began with RecoNIC, an industrial collaboration with AMD that gave me direct experience with SmartNIC platforms and with the host--device interaction patterns that dominate AI infrastructure performance.
 
-\textbf{RecoNIC: Foundations from SmartNIC-Based Compute Offloading (ArXiv)~\cite{reconic}.} RecoNIC is a hardware--software co-designed platform for RDMA-enabled compute offloading on FPGA-based SmartNICs. The motivation arose from a fundamental inefficiency in conventional FPGA deployments: data arriving from the network is first DMA'd into host memory, then copied over PCIe to the FPGA for processing, and finally copied back to host memory before transmission. These extra hops cause significant performance overhead. RecoNIC address this by integrating an RDMA engine and programmable compute-logic modules directly into the SmartNIC's hardware shell, allowing network data to be placed directly into device memory and processed in place by user-defined accelerators.
+RecoNIC is a hardware--software co-designed platform for RDMA-enabled compute offloading on FPGA-based SmartNICs. The motivation arose from a fundamental inefficiency in conventional FPGA deployments: data arriving from the network is first DMA'd into host memory, then copied over PCIe to the FPGA for processing, and finally copied back to host memory before transmission. These extra hops cause significant performance overhead. RecoNIC address this by integrating an RDMA engine and programmable compute-logic modules directly into the SmartNIC's hardware shell, allowing network data to be placed directly into device memory and processed in place by user-defined accelerators.
 
 Taking RecoNIC as a starting point, my research extends cross-layer co-design to the full landscape of AI infrastructure, where multiple specialized accelerators (GPUs, SmartNICs, programmable switches) and heterogeneous memory tiers (HBM, DRAM, CXL, SSD) interact. I aim to treat AI infrastructure as a single co-designed system rather than a collection of independently tuned components: cross-layer dataplanes that orchestrate data movement across accelerators and memory tiers, ML-driven policies that adapt placement and scheduling to workload dynamics, and programmable-network primitives that offload collective operations from hosts. This direction is a natural synthesis of my prior work, including programmable network coordination (Hydra, Capybara), runtime-adaptive OS (Autokernel), and SmartNIC compute offloading (RecoNIC), applied to the AI workloads that define the next generation datacenter design.
 
