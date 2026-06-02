@@ -58,8 +58,13 @@ email = "inho.choi.12@gmail.com"
 +++
 ##
 
-<p style="font-size:18px; color: #0d15f3d8; background-color: #bdbfc1ff; padding: 15px; border-radius: 8px; border-left: 4px solid #0D8BF3; margin-bottom: 20px; text-align: justify;">
+<p style="font-size:18px; color: #0d15f3d8; background-color: #bdbfc1ff; padding: 15px; border-radius: 8px; border-left: 4px solid #0D8BF3; margin-bottom: 15px; text-align: justify;">
 <strong>📢 I am currently on the job market. I'd be happy to connect!</strong>
+</p>
+
+<p style="margin-bottom: 20px;">
+<a href="/assets/inho_cv.pdf" style="display: inline-block; padding: 8px 16px; margin-right: 8px; background-color: #0D8BF3; color: white; text-decoration: none; border-radius: 6px; font-size: 15px; font-weight: bold;">📄 CV</a>
+<a href="/assets/inho_research_statement.pdf" style="display: inline-block; padding: 8px 16px; background-color: #0D8BF3; color: white; text-decoration: none; border-radius: 6px; font-size: 15px; font-weight: bold;">📝 Research Statement</a>
 </p>
 
 <p style="font-size:20px; text-align: justify;">
@@ -293,7 +298,7 @@ My research interests lie at the intersection of <strong>distributed systems</st
       Systems & Network Security Lab (Advisor: <a href="https://netsp.kaist.ac.kr/" >Min Suk Kang</a>)
     </p>
     <p style="float: left; width: 20%; text-align: right; margin-bottom: 10px;">
-      Sep 2018 — Feb 2019
+      Oct 2018 — Feb 2019
     </p>
     <div style="clear: both;"></div>
     <p style="text-align: justify; line-height: 1.6; margin-left: 20px; margin-right: 20px; margin-bottom: 20px; font-size: 15px;">
@@ -327,7 +332,7 @@ My research interests lie at the intersection of <strong>distributed systems</st
       Dependable Computing Lab (Advisor: <a href="http://dclab.yonsei.ac.kr/" >Kyoungwoo Lee</a>)
     </p>
     <p style="float: left; width: 20%; text-align: right; margin-bottom: 10px;">
-      Feb 2017 — May 2018
+      Feb 2017 — Jun 2017
     </p>
     <div style="clear: both;"></div>
     <p style="text-align: justify; line-height: 1.6; margin-left: 20px; margin-right: 20px; margin-bottom: 20px; font-size: 15px;">
