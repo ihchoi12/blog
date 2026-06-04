@@ -23,8 +23,13 @@
 
 
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
 \usepackage[english]{babel}
 \usepackage{ragged2e}
+
+% Short apostrophe for year markers (e.g., SIGCOMM \yr{26})
+\newcommand{\yr}[1]{\raisebox{0.4ex}{\fontsize{8pt}{8pt}\selectfont\textquotesingle}#1}
 
 \usepackage{multicol}
 \setlength{\columnsep}{0.1mm}
@@ -152,49 +157,49 @@
 % %-----------Conference Publications-----------------
 \section{Publications}
   \resumeSubHeadingListStart
-    \resumeSubItem{\href{https://conferences.sigcomm.org/sigcomm/2026/}{[SIGCOMM '26] Capybara: Dynamic Load Balancing with Microsecond-Scale TCP Migration}}
+    \resumeSubItem{\href{https://conferences.sigcomm.org/sigcomm/2026/}{[SIGCOMM \yr{26}] Capybara: Dynamic Load Balancing with Microsecond-Scale TCP Migration}}
 
       {\textbf{Inho Choi}, Nimish Wadekar, Guangda Sun, Raj Joshi, Joshua Fried, Omar S. Navarro Leija, Dan Ports, Irene Zhang, and Jialin Li.}
 
-      {Proceedings of the 2026 ACM SIGCOMM Conference (SIGCOMM '26)}
-    \resumeSubItem{\href{https://dl.acm.org/doi/pdf/10.1145/3725783.3764392}{[APSYS '25] ML-native Dataplane Operating Systems}}
+      {Proceedings of the 2026 ACM SIGCOMM Conference (SIGCOMM \yr{26})}
+    \resumeSubItem{\href{https://dl.acm.org/doi/pdf/10.1145/3725783.3764392}{[APSYS \yr{25}] ML-native Dataplane Operating Systems}}
     
       {\textbf{Inho Choi}, Anand Bonde, Jing Liu, Joshua Fried, Irene Zhang, Jialin Li.} 
       
       {16th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys 2025)}
-    \resumeSubItem{\href{https://arxiv.org/pdf/2312.06207}{[ArXiv] A Primer on RecoNIC: RDMA-enabled Compute Offloading on SmartNIC}}
+    \resumeSubItem{\href{https://arxiv.org/pdf/2312.06207}{[ArXiv 2023] A Primer on RecoNIC: RDMA-enabled Compute Offloading on SmartNIC}}
     
       {Guanwen Zhong, Aditya Kolekar, Burin Amornpaisannon, \textbf{Inho Choi}, Haris Javaid, Mario Baldi.} 
       
       {ArXiv, Dec, 2023}
     
     
-    \resumeSubItem{\href{https://dl.acm.org/doi/pdf/10.1145/3609510.3609813}{[APSYS '23] Capybara: $\mu$Second-scale live TCP migration}}
+    \resumeSubItem{\href{https://dl.acm.org/doi/pdf/10.1145/3609510.3609813}{[APSYS \yr{23}] Capybara: $\mu$Second-scale live TCP migration}}
     
       {\textbf{Inho Choi}, Nimish Wadekar, Raj Joshi, Joshua Fried, Dan R. K. Ports, Irene Zhang, and Jialin Li.} 
       
       {14th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys 2023)}
 
-    \resumeSubItem{\href{https://dl.acm.org/doi/pdf/10.1145/3603269.3604849}{[SIGCOMM '23] Network Load Balancing with In-network Reordering Support for RDMA}}
+    \resumeSubItem{\href{https://dl.acm.org/doi/pdf/10.1145/3603269.3604849}{[SIGCOMM \yr{23}] Network Load Balancing with In-network Reordering Support for RDMA}}
     
       {Cha Hwan Song, Xin Zhe Khooi, Raj Joshi, \textbf{Inho Choi}, Jialin Li, and Mun Choon Chan.} 
       
-      {Proceedings of the 2023 ACM SIGCOMM Conference (SIGCOMM '23)}
+      {Proceedings of the 2023 ACM SIGCOMM Conference (SIGCOMM \yr{23})}
     
     
-    \resumeSubItem{\href{https://www.usenix.org/conference/nsdi23/presentation/choi}{[NSDI '23] Hydra: Serialization-Free Network Ordering for Strongly Consistent Distributed Applications}}
+    \resumeSubItem{\href{https://www.usenix.org/conference/nsdi23/presentation/choi}{[NSDI \yr{23}] Hydra: Serialization-Free Network Ordering for Strongly Consistent Distributed Applications}}
     
       {\textbf{Inho Choi}, Ellis Michael, Yunfan Li, Dan Ports, and Jialin Li.} 
       
       {Proceedings of the 20th USENIX Conference on Network Systems Design and Implementation}
       
-    \resumeSubItem{\href{https://ihchoi12.github.io/assets/tran2020stealthier.pdf}{[S\&P '20] A Stealthier Partitioning Attack against Bitcoin Peer-to-Peer Network}}
+    \resumeSubItem{\href{https://ihchoi12.github.io/assets/tran2020stealthier.pdf}{[S\&P \yr{20}] A Stealthier Partitioning Attack against Bitcoin Peer-to-Peer Network}}
     
       {Muoi Tran, \textbf{Inho Choi}, Gi Jun Moon, Viet-Anh Vu, and Min Suk Kang.}
       
       {In Proceedings of IEEE Symposium on Security and Privacy, May 2020}
   
-    \resumeSubItem{\href{https://dl.acm.org/citation.cfm?id=3125616}{[UbiComp Workshop '17] Multimodal Data Collection Framework for Mental Stress Monitoring}}
+    \resumeSubItem{\href{https://dl.acm.org/citation.cfm?id=3125616}{[UbiComp Workshop \yr{17}] Multimodal Data Collection Framework for Mental Stress Monitoring}}
     
       {Saewon Kye, Junhyung Moon, Juneil Lee, \textbf{Inho Choi}, Dongmi Cheon, Kyoungwoo Lee.}  
       
@@ -239,7 +244,7 @@
       \small
       \begin{justify}
       \noindent
-      Conducted research on ML-native dataplane OS architecture for automatic parameter tuning to address performance optimization challenges in modern datacenters at microsecond scales. Designed system architecture integrating machine learning natively into the OS dataplane for dynamic parameter optimization. Developed and evaluated the approach to demonstrate benefits of automated tuning across diverse workloads. Published initial findings at \bluehref{https://dl.acm.org/doi/pdf/10.1145/3725783.3764392}{APSys '25}, with full-system development currently in progress.
+      Conducted research on ML-native dataplane OS architecture for automatic parameter tuning to address performance optimization challenges in modern datacenters at microsecond scales. Designed system architecture integrating machine learning natively into the OS dataplane for dynamic parameter optimization. Developed and evaluated the approach to demonstrate benefits of automated tuning across diverse workloads. Published initial findings at \bluehref{https://dl.acm.org/doi/pdf/10.1145/3725783.3764392}{APSys \yr{25}}, with full-system development currently in progress.
       \end{justify}
       \end{minipage}
 
@@ -258,7 +263,7 @@
       \small
       \begin{justify}
       \noindent
-      Conducted research on dynamic Layer-4 load balancing to address tail latency issues under unpredictable workloads and traffic bursts due to static TCP connection assignment between client and server. Designed and implemented a new dynamic load balancing solution with microsecond-scale TCP connection migration, leveraging programmable switches and kernel-bypass technologies. Published initial findings at \bluehref{https://dl.acm.org/doi/pdf/10.1145/3609510.3609813}{APSys '23}, with full paper currently under submission.
+      Conducted research on dynamic Layer-4 load balancing to address tail latency issues under unpredictable workloads and traffic bursts due to static TCP connection assignment between client and server. Designed and implemented a new dynamic load balancing solution with microsecond-scale TCP connection migration, leveraging programmable switches and kernel-bypass technologies. Published initial findings at \bluehref{https://dl.acm.org/doi/pdf/10.1145/3609510.3609813}{APSys \yr{23}}, with full paper currently under submission.
       \end{justify}
       \end{minipage}
 
@@ -296,7 +301,7 @@
       \small
       \begin{justify}
       \noindent
-      Contributed to research on network-level security vulnerabilities in Bitcoin's peer-to-peer network. Participated in demonstrating partitioning attacks on Bitcoin's peer-to-peer network and defense mechanisms. Co-authored a paper published at \bluehref{https://ihchoi12.github.io/assets/tran2020stealthier.pdf}{IEEE S\&P '20}, advancing cryptocurrency network security.
+      Contributed to research on network-level security vulnerabilities in Bitcoin's peer-to-peer network. Participated in demonstrating partitioning attacks on Bitcoin's peer-to-peer network and defense mechanisms. Co-authored a paper published at \bluehref{https://ihchoi12.github.io/assets/tran2020stealthier.pdf}{IEEE S\&P \yr{20}}, advancing cryptocurrency network security.
       \end{justify}
       \end{minipage}
 
@@ -334,7 +339,7 @@
       \small
       \begin{justify}
       \noindent
-      Contributed to development of a multimodal stress monitoring framework for analyzing people's physiological and behavioral reactions to stressors. Participated in designing and conducting experiments and implementing a real-time signal processing framework. Co-authored paper published at \bluehref{https://ubicomp-mental-health.github.io/papers/2017/stress-kye.pdf}{UbiComp Workshop '17}, presenting the framework and experimental findings.
+      Contributed to development of a multimodal stress monitoring framework for analyzing people's physiological and behavioral reactions to stressors. Participated in designing and conducting experiments and implementing a real-time signal processing framework. Co-authored paper published at \bluehref{https://ubicomp-mental-health.github.io/papers/2017/stress-kye.pdf}{UbiComp Workshop \yr{17}}, presenting the framework and experimental findings.
       \end{justify}
       \end{minipage}
 
@@ -390,11 +395,11 @@
 
 \section{Services}
   \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
-    $\bullet$ \hspace{0.5em} \textbf{Reviewer} & ToN '25 \\
+    $\bullet$ \hspace{0.5em} \textbf{Reviewer} & ToN \yr{25} \\
     
-    $\bullet$ \hspace{0.5em} \textbf{Shadow PC Reviewer} & EuroSys '26, EuroSys '25 \\
+    $\bullet$ \hspace{0.5em} \textbf{Shadow PC Reviewer} & EuroSys \yr{26}, EuroSys \yr{25} \\
     
-    $\bullet$ \hspace{0.5em} \textbf{Student Volunteer} & SOSP '21 \\
+    $\bullet$ \hspace{0.5em} \textbf{Student Volunteer} & SOSP \yr{21} \\
   \end{tabular*}
 
 \section{Invited Talks}

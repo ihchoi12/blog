@@ -40,6 +40,8 @@ defaultContentLanguageInSubdir = false
     ordered = false
   [markup.goldmark.renderer]
     unsafe = true
+  [markup.goldmark.extensions.typographer]
+    disable = true
 
 [taxonomies]
   category = "categories"

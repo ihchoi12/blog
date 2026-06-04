@@ -56,6 +56,10 @@ email = "inho.choi.12@gmail.com"
     # Options: fixed, local, scroll.
     attachment = ""
 +++
+<style>
+.yr { font-size: 0.75em; vertical-align: 0.25em; }
+</style>
+
 ##
 
 <p style="font-size:18px; color: #0d15f3d8; background-color: #bdbfc1ff; padding: 15px; border-radius: 8px; border-left: 4px solid #0D8BF3; margin-bottom: 15px; text-align: justify;">
@@ -155,19 +159,19 @@ My research interests lie at the intersection of <strong>distributed systems</st
 <div id="publications"></div>
 
 ## Publications
-  <b>[SIGCOMM '26]
+  <b>[SIGCOMM <span class="yr">'</span>26]
   <a href="https://conferences.sigcomm.org/sigcomm/2026/"> Capybara: Dynamic Load Balancing with Microsecond-Scale TCP Migration</a> </b> <br>
   <b><u>Inho Choi</u></b>, Nimish Wadekar, Guangda Sun, Raj Joshi, Joshua Fried, Omar S. Navarro Leija, Dan Ports, Irene Zhang, Jialin Li. <br>
-  Proceedings of the 2026 ACM SIGCOMM Conference (SIGCOMM '26) <br>
+  Proceedings of the 2026 ACM SIGCOMM Conference (SIGCOMM <span class="yr">'</span>26) <br>
   <br>
 
-  <b>[APSYS '25]
+  <b>[APSYS <span class="yr">'</span>25]
   <a href="https://dl.acm.org/doi/pdf/10.1145/3725783.3764392"> ML-native Dataplane Operating Systems </a> </b> <br>
   <b><u>Inho Choi</u></b>, Anand Bonde, Jing Liu, Joshua Fried, Irene Zhang, Jialin Li. <br>
   16th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys 2025) <br>
   <br>
 
-  <b>[ArXiv]
+  <b>[ArXiv 2023]
   <a href="https://arxiv.org/pdf/2312.06207"> A Primer on RecoNIC: RDMA-enabled Compute Offloading on SmartNIC</a> </b> <br>
   Guanwen Zhong, Aditya Kolekar, Burin Amornpaisannon, <b><u>Inho Choi</u></b>, Haris Javaid, Mario Baldi. <br>
   ArXiv, Dec, 2023 <br>
@@ -181,16 +185,16 @@ My research interests lie at the intersection of <strong>distributed systems</st
   </details>
   <br>
 
-  <b>[APSYS '23]
+  <b>[APSYS <span class="yr">'</span>23]
   <a href="https://dl.acm.org/doi/pdf/10.1145/3609510.3609813"> Capybara: &mu;Second-scale live TCP migration</a> </b> <br>
   <b><u>Inho Choi</u></b>, Nimish Wadekar, Raj Joshi, Joshua Fried, Dan R. K. Ports, Irene Zhang, Jialin Li. <br>
   14th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys 2023) <br>
   <br>
 
-  <b>[SIGCOMM '23]
+  <b>[SIGCOMM <span class="yr">'</span>23]
   <a href="https://dl.acm.org/doi/pdf/10.1145/3603269.3604849"> Network Load Balancing with In-network Reordering Support for RDMA</a> </b> <br>
   Cha Hwan Song, Xin Zhe Khooi, Raj Joshi, <b><u>Inho Choi</u></b>, Jialin Li, and Mun Choon Chan. <br>
-  Proceedings of the 2023 ACM SIGCOMM Conference (SIGCOMM '23) <br>
+  Proceedings of the 2023 ACM SIGCOMM Conference (SIGCOMM <span class="yr">'</span>23) <br>
   <details style="margin-top: 5px;">
     <summary style="cursor: pointer; display: inline-block; padding: 3px 10px; background-color: rgba(13, 139, 243, 0.1); border: 1px solid rgba(13, 139, 243, 0.6); border-radius: 4px; color: rgba(13, 139, 243, 1); font-size: 13px; font-weight: bold;">Summary</summary>
     <div style="text-align: justify; line-height: 1.6; margin-top: 10px; padding: 10px 15px; background-color: rgba(13, 139, 243, 0.05); border-left: 3px solid rgba(13, 139, 243, 0.6); font-size: 15px;">
@@ -200,19 +204,19 @@ My research interests lie at the intersection of <strong>distributed systems</st
   </details>
   <br>
 
-  <b>[NSDI '23]
+  <b>[NSDI <span class="yr">'</span>23]
   <a href="https://www.usenix.org/conference/nsdi23/presentation/choi"> Hydra: Serialization-Free Network Ordering for Strongly Consistent Distributed Applications</a> </b> <br>
   <b><u>Inho Choi</u></b>, Ellis Michael, Yunfan Li, Dan Ports, and Jialin Li. <br>
   Proceedings of the 20th USENIX Conference on Network Systems Design and Implementation<br>
   <br>
 
-  <b>[S&P '20]
+  <b>[S&P <span class="yr">'</span>20]
   <a href="https://ihchoi12.github.io/assets/tran2020stealthier.pdf"> A Stealthier Partitioning Attack against Bitcoin Peer-to-Peer Network</a> </b> <br>
   Muoi Tran, <b><u>Inho Choi</u></b>, Gi Jun Moon, Viet-Anh Vu, and Min Suk Kang. <br>
   In Proceedings of IEEE Symposium on Security and Privacy, May 2020 <br>
   <br>
 
-  <b>[UbiComp Workshop '17]
+  <b>[UbiComp Workshop <span class="yr">'</span>17]
   <a href="https://ubicomp-mental-health.github.io/papers/2017/stress-kye.pdf"> Multimodal Data Collection Framework for Mental Stress Monitoring</a> </b> <br>
   Saewon Kye, Junhyung Moon, Juneil Lee, <b><u>Inho Choi</u></b>, Dongmi Cheon, and Kyoungwoo Lee. <br>
   In Proceedings of the 2017 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2017 ACM International Symposium on Wearable Computers (Workshop Paper) <br>
@@ -251,7 +255,7 @@ My research interests lie at the intersection of <strong>distributed systems</st
     </p>
     <div style="clear: both;"></div>
     <p style="text-align: justify; line-height: 1.6; margin-left: 20px; margin-right: 20px; margin-bottom: 20px; font-size: 15px;">
-      Conducted research on ML-native dataplane OS architecture for automatic parameter tuning to address performance optimization challenges in modern datacenters at microsecond scales. Designed system architecture integrating machine learning natively into the OS dataplane for dynamic parameter optimization. Developed and evaluated the approach to demonstrate benefits of automated tuning across diverse workloads. Published initial findings at <a href="https://dl.acm.org/doi/pdf/10.1145/3725783.3764392">APSys '25</a>, with full-system development currently in progress.
+      Conducted research on ML-native dataplane OS architecture for automatic parameter tuning to address performance optimization challenges in modern datacenters at microsecond scales. Designed system architecture integrating machine learning natively into the OS dataplane for dynamic parameter optimization. Developed and evaluated the approach to demonstrate benefits of automated tuning across diverse workloads. Published initial findings at <a href="https://dl.acm.org/doi/pdf/10.1145/3725783.3764392">APSys <span class="yr">'</span>25</a>, with full-system development currently in progress.
     </p>
     <!--  -->
     <p style="float: left; width: 50%; text-align: left;">
@@ -268,7 +272,7 @@ My research interests lie at the intersection of <strong>distributed systems</st
     </p>
     <div style="clear: both;"></div>
     <p style="text-align: justify; line-height: 1.6; margin-left: 20px; margin-right: 20px; margin-bottom: 20px; font-size: 15px;">
-      Conducted research on dynamic Layer-4 load balancing to address tail latency issues under unpredictable workloads and traffic bursts due to static TCP connection assignment between client and server. Designed and implemented a new dynamic load balancing solution with microsecond-scale TCP connection migration, leveraging programmable switches and kernel-bypass technologies. Published initial findings at <a href="https://dl.acm.org/doi/pdf/10.1145/3609510.3609813">APSys '23</a>, with full paper currently under submission.
+      Conducted research on dynamic Layer-4 load balancing to address tail latency issues under unpredictable workloads and traffic bursts due to static TCP connection assignment between client and server. Designed and implemented a new dynamic load balancing solution with microsecond-scale TCP connection migration, leveraging programmable switches and kernel-bypass technologies. Published initial findings at <a href="https://dl.acm.org/doi/pdf/10.1145/3609510.3609813">APSys <span class="yr">'</span>23</a>, with full paper currently under submission.
     </p>
     <!--  -->
     <p style="float: left; width: 50%; text-align: left;">
@@ -302,7 +306,7 @@ My research interests lie at the intersection of <strong>distributed systems</st
     </p>
     <div style="clear: both;"></div>
     <p style="text-align: justify; line-height: 1.6; margin-left: 20px; margin-right: 20px; margin-bottom: 20px; font-size: 15px;">
-      Contributed to research on network-level security vulnerabilities in Bitcoin's peer-to-peer network. Participated in demonstrating partitioning attacks on Bitcoin's peer-to-peer network and defense mechanisms. Co-authored a paper published at <a href="https://ihchoi12.github.io/assets/tran2020stealthier.pdf">IEEE S&P '20</a>, advancing cryptocurrency network security.
+      Contributed to research on network-level security vulnerabilities in Bitcoin's peer-to-peer network. Participated in demonstrating partitioning attacks on Bitcoin's peer-to-peer network and defense mechanisms. Co-authored a paper published at <a href="https://ihchoi12.github.io/assets/tran2020stealthier.pdf">IEEE S&P <span class="yr">'</span>20</a>, advancing cryptocurrency network security.
     </p>
     <!--  -->
     <p style="float: left; width: 50%; text-align: left;">
@@ -336,7 +340,7 @@ My research interests lie at the intersection of <strong>distributed systems</st
     </p>
     <div style="clear: both;"></div>
     <p style="text-align: justify; line-height: 1.6; margin-left: 20px; margin-right: 20px; margin-bottom: 20px; font-size: 15px;">
-      Contributed to development of a multimodal stress monitoring framework for analyzing people's physiological and behavioral reactions to stressors. Participated in designing and conducting experiments and implementing a real-time signal processing framework. Co-authored paper published at <a href="https://ubicomp-mental-health.github.io/papers/2017/stress-kye.pdf">UbiComp Workshop '17</a>, presenting the framework and experimental findings.
+      Contributed to development of a multimodal stress monitoring framework for analyzing people's physiological and behavioral reactions to stressors. Participated in designing and conducting experiments and implementing a real-time signal processing framework. Co-authored paper published at <a href="https://ubicomp-mental-health.github.io/papers/2017/stress-kye.pdf">UbiComp Workshop <span class="yr">'</span>17</a>, presenting the framework and experimental findings.
     </p>
     <!--  -->
     <div style="clear: both;"></div>
@@ -407,19 +411,19 @@ My research interests lie at the intersection of <strong>distributed systems</st
   <li>
     <div style="overflow: hidden;">
       <span style="float: left;"><b>Reviewer</b></span>
-      <span style="float: right; font-style: italic;">ToN '25</span>
+      <span style="float: right; font-style: italic;">ToN <span class="yr">'</span>25</span>
     </div>
   </li>
   <li>
     <div style="overflow: hidden;">
       <span style="float: left;"><b>Shadow PC Reviewer</b></span>
-      <span style="float: right; font-style: italic;">EuroSys '26, EuroSys '25</span>
+      <span style="float: right; font-style: italic;">EuroSys <span class="yr">'</span>26, EuroSys <span class="yr">'</span>25</span>
     </div>
   </li>
   <li>
     <div style="overflow: hidden;">
       <span style="float: left;"><b>Student Volunteer</b></span>
-      <span style="float: right; font-style: italic;">SOSP '21</span>
+      <span style="float: right; font-style: italic;">SOSP <span class="yr">'</span>21</span>
     </div>
   </li>
 </ul>
