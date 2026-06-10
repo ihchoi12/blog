@@ -394,17 +394,6 @@ My research interests lie at the intersection of <strong>distributed systems</st
 
 <br>
 
-## Mentoring Experiences
-
-<ul>
-  <li>
-    <b>Yiyang Liu</b> &mdash; NUS, Singapore (2024) <br>
-    <i>[Master's Thesis]</i> <span style="font-style: italic;">Enhancing Distributed Systems with Hydra: A Software Solution for Scalable Network Ordering</span>
-  </li>
-</ul>
-
-<br>
-
 ## Services
 
 <ul style="list-style-type: disc;">
