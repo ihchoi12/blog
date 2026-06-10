@@ -419,7 +419,7 @@ My research interests lie at the intersection of <strong>distributed systems</st
 
 <br>
 
-## Invited Talks
+## Talks
 
 <ul style="list-style-type: disc;">
   <li>
