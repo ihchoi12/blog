@@ -76,6 +76,15 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\resumeSubheadingGPA}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small #5} & \\
+    \end{tabular*}\vspace{-5pt}
+}
+
 \newcommand{\resumeSubItem}[2]{
   \item\small{
     \textbf{#1}{ #2 \vspace{-2pt}}
@@ -110,19 +119,22 @@
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
+    \resumeSubheadingGPA
       {National University of Singapore}{Singapore}
-      {Ph.D. in Computer Science (Advisor: \href{https://www.comp.nus.edu.sg/~lijl/}{Jialin Li});}{August 2019 -- January 2026}
+      {Ph.D. in Computer Science (Advisor: \href{https://www.comp.nus.edu.sg/~lijl/}{Jialin Li})}{August 2019 -- January 2026}
+      {GPA 4.58/5.0}
   \resumeSubHeadingListEnd
   \resumeSubHeadingListStart
-    \resumeSubheading
+    \resumeSubheadingGPA
       {Yonsei University}{Seoul, Republic of Korea}
-      {Bachelor's Degree in Computer Science;}{March 2012 -- August 2019}
+      {Bachelor's Degree in Computer Science}{March 2012 -- August 2019}
+      {GPA 3.52/4.3}
   \resumeSubHeadingListEnd
   \resumeSubHeadingListStart
-    \resumeSubheading
+    \resumeSubheadingGPA
       {Uppsala University}{Uppsala, Sweden}
-      {Exchange Student in Information Technology; \cmt{Grade: 4.5/5}}{August 2017 -- January 2018}
+      {Exchange Student in Information Technology}{August 2017 -- January 2018}
+      {GPA 4.5/5.0 \quad (Courses: Data Mining, AI, HCI, Compiler Design)}
   \resumeSubHeadingListEnd
 
 % %-----------Work in Progress-----------------
