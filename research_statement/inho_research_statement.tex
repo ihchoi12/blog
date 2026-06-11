@@ -92,7 +92,7 @@ My research is grounded in both academic rigor and the realities of industry dat
 Through three research internships at Microsoft Research (MSR) and AMD, I have built systems that target the bottlenecks faced by large-scale production datacenters, with a consistent emphasis on designs that are both technically novel and practically deployable. 
 My work has been recognized by both industry and the research community for not only overcoming the practical deployability and performance limitations of prior state-of-the-art designs but also inspiring new design paradigms for datacenters. 
 The resulting systems have appeared as first-author publications at top networking systems venues, including NSDI and SIGCOMM, and have been demonstrated on MSR datacenters. 
-This impact continues through my ongoing close collaboration with MSR, where I am further advancing my research at the intersection of cutting-edge systems and production datacenters.
+This impact continues through my ongoing close collaboration with Microsoft Research, where I am further advancing my research at the intersection of cutting-edge systems and production datacenters, and Microsoft has expressed interest in integrating my solutions into its datacenter systems.
 
 \section{Co-Designing Distributed Systems with Programmable Network Hardware}
 
@@ -106,7 +106,7 @@ However, this single-sequencer design caps system scalability, creates network l
 
 Hydra is the first work to make network ordering practically deployable at scale. 
 It distributes ordering across \emph{multiple} programmable switches that operate in parallel, with a novel cross-switch ordering scheme that lets receivers merge per-switch sequences without any coordination among the switches themselves. 
-Hydra effectively addresses all three limitations of the single-sequencer design, delivering order-of-magnitude improvements over prior network ordering systems in practical deployments.
+Hydra effectively addresses all three limitations of the single-sequencer design, delivering 11$\times$ lower median latency, 47\% higher throughput, and 5$\times$ faster sequencer failover than prior state-of-the-art network ordering systems.
 
 \subsection{ConWeave: Network Load Balancing with In-network Reordering Support for RDMA (SIGCOMM \yr{23})~\cite{conweave}}
 In modern datacenters, Remote Direct Memory Access (RDMA) powers the most performance-critical workloads, from large-scale AI training to distributed storage.
@@ -117,7 +117,7 @@ The trade-off has been a major barrier to fully exploiting RDMA's capacity at sc
 
 ConWeave is the first work to break this trade-off by performing fine-grained rerouting while restoring packet order \emph{inside the network itself}, before packets reach the destination server.
 When congestion arises, the sender-side switch reroutes traffic onto a less congested path; the receiver-side switch then uses hardware features of modern programmable switches to temporarily hold and reorder the diverted packets, delivering them in the original order.
-ConWeave requires no changes to RDMA hardware and applications, removing a major practical barrier to practical deployments, while significantly outperforming existing load balancing schemes.
+ConWeave requires no changes to RDMA hardware and applications, removing a major practical barrier to deployment, while improving 99-percentile flow completion times by up to 66.8\% over existing load balancing schemes.
 
 \subsection{Capybara: Dynamic Server Load Balancing with TCP Migration (APSys \yr{23}, SIGCOMM \yr{26})~\cite{capybara_apsys, capybara_sigcomm}}
 In datacenters, Layer-4 (L4) load balancers distribute client TCP connections across servers.
@@ -128,7 +128,7 @@ fails to fully prevent load imbalance across servers, causing inefficiency in pr
 Capybara is a novel L4 load balancing architecture built on microsecond-scale \emph{live migration} of established TCP connections, enabling dynamic rebalancing of workloads in response to real-time conditions.
 When the load balancer detects an overloaded server, it can move some of its connections to underutilized servers in tens of microseconds.
 Capybara achieves this through a tight co-design between a programmable network switch that redirects connection traffic according to migrations and a host TCP stack that can transfer connection states at microsecond speed. 
-Capybara effectively addresses the limitation of static pinning, delivering order-of-magnitude performance improvements over existing L4 load balancers under realistic workloads.
+Under realistic workloads, Capybara delivers up to 149$\times$ lower 99-percentile latency and more than 2$\times$ higher throughput compared to state-of-the-art load balancing approaches.
 
 
 \section{Ongoing and Future Research Directions}
@@ -149,7 +149,7 @@ This ML-native architecture provides a uniform tuning interface across networkin
 % The contribution is the abstraction, not a better tuner. 
 % Where prior systems retrofit ML into the OS, 
 Autokernel co-designs the OS with ML, making continuous workload-adaptive optimization a deployable OS property that future ML policies can build on without re-architecting the integration. 
-In preliminary evaluation, Autokernel sustains microsecond-scale tail latency under dynamic workloads where a statically-tuned baseline incurs millisecond-scale queuing delays. 
+In preliminary evaluation, Autokernel sustains around 100$\mu$s tail latency under dynamic workloads where a statically-tuned baseline incurs millisecond-scale queuing delays. 
 Full-system development is ongoing in close collaboration with Microsoft Research.
 
 While Autokernel establishes how ML should integrate with the OS, the bottlenecks ML must adapt to remain poorly characterized in community. 
