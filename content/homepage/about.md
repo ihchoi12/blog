@@ -73,7 +73,7 @@ email = "inho.choi.12@gmail.com"
 
 <p style="font-size:20px; text-align: justify;">
 I am a Postdoctoral Research Fellow at the National University of Singapore,
-working with <a href="https://www.comp.nus.edu.sg/~lijl/">Jialin Li</a>. I also closely collaborate with <a href="https://irenezhang.net/">Irene Zhang</a> and <a href="https://drkp.net/">Dan Ports</a> at Microsoft Research.
+working with <a href="https://www.comp.nus.edu.sg/~lijl/">Jialin Li</a>. I also closely collaborate with <a href="https://irenezhang.net/">Irene Zhang</a> and <a href="https://drkp.net/">Dan R. K. Ports</a> at Microsoft Research.
 </p>
 
 <p style="font-size:18px; margin-top: 15px; line-height: 1.6; text-align: justify;">
@@ -161,7 +161,7 @@ My research interests lie at the intersection of <strong>distributed systems</st
 ## Publications
   <b>[SIGCOMM <span class="yr">'</span>26]
   <a href="https://conferences.sigcomm.org/sigcomm/2026/"> Capybara: Dynamic Load Balancing with Microsecond-Scale TCP Migration</a> </b> <br>
-  <b><u>Inho Choi</u></b>, Nimish Wadekar, Guangda Sun, Raj Joshi, Joshua Fried, Omar S. Navarro Leija, Dan Ports, Irene Zhang, Jialin Li. <br>
+  <b><u>Inho Choi</u></b>, Nimish Wadekar, Guangda Sun, Raj Joshi, Joshua Fried, Omar S. Navarro Leija, Dan R. K. Ports, Irene Zhang, Jialin Li. <br>
   Proceedings of the 2026 ACM SIGCOMM Conference (SIGCOMM <span class="yr">'</span>26) <br>
   <br>
 
@@ -206,7 +206,7 @@ My research interests lie at the intersection of <strong>distributed systems</st
 
   <b>[NSDI <span class="yr">'</span>23]
   <a href="https://www.usenix.org/conference/nsdi23/presentation/choi"> Hydra: Serialization-Free Network Ordering for Strongly Consistent Distributed Applications</a> </b> <br>
-  <b><u>Inho Choi</u></b>, Ellis Michael, Yunfan Li, Dan Ports, and Jialin Li. <br>
+  <b><u>Inho Choi</u></b>, Ellis Michael, Yunfan Li, Dan R. K. Ports, and Jialin Li. <br>
   Proceedings of the 20th USENIX Conference on Network Systems Design and Implementation<br>
   <br>
 
@@ -268,7 +268,7 @@ My research interests lie at the intersection of <strong>distributed systems</st
       Redmond, WA, USA
     </p>
     <p style="float: left; width: 80%; text-align: left;">
-      Systems Research Group (Mentor: <a href="https://drkp.net/" >Dan Ports</a>)
+      Systems Research Group (Mentor: <a href="https://drkp.net/" >Dan R. K. Ports</a>)
     </p>
     <p style="float: left; width: 20%; text-align: right; margin-bottom: 10px;">
       June 2024 — Aug 2024
